@@ -3,8 +3,14 @@
  * auteur : Elodie DECERLE
  */
 
-class Minion (var niveauDeConnerie: Int,
-    var prenom: String, var joueur: Joueur, 
-    var position : Position) {
+class Minion (niveauDeConnerie: Int,
+    prenom: String,
+    position : Position) {
+  
+  def this( proprietaire : Joueur) { 
+    this(4,"",new Position());
+  }
+  
+  
   
 }
