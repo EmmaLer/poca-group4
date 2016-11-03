@@ -4,13 +4,7 @@
  */
 
 class Minion (niveauDeConnerie: Int,
-    prenom: String,
+    prenom: String, proprietaire : Joueur,
     position : Position) {
-  
-  def this( proprietaire : Joueur) { 
-    this(4,"",new Position());
-  }
-  
-  
-  
+    
 }
