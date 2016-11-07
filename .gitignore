@@ -1,1 +1,9 @@
 .DS_Store
+.metadata/*
+.project/*
+.recommenders/*
+Version_0/.cache-main
+Version_0/.classpath
+Version_0/.projet
+Version_0/.settings
+Version_0/bin/*
