@@ -1,0 +1,5 @@
+package accessibleParEquipe
+
+trait AccessibleParEquipe {
+  
+}

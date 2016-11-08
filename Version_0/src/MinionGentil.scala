@@ -6,5 +6,6 @@ import position.Position
 
 class MinionGentil(niveauDeConnerie: Int, prenom: String, proprietaire :Joueur, position : Position)
   extends Minion(niveauDeConnerie: Int, prenom: String, proprietaire : Joueur, position : Position) {
+ 
   def aiderProprio
 }
