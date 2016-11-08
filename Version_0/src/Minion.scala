@@ -1,45 +1,26 @@
-/**
- * classe de définition des Minions
- * auteur : Elodie DECERLE
- */
+/** classe abstraite de définition des Minions **/
 
 package minion
 
 import position.Position
 import joueur.Joueur
-/*
- * comment faire l'import ? et utiliser 
- * les classes Joueur et Position comme arguments du
- * constructeur
- */
 
-
-
-class Minion (niveauDeConnerie: Int,
-    prenom: String, proprietaire :  Joueur,
-    position : Position) {
+abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
+    var proprietaire : Joueur, var position : Position) {
     
-  /* avec la potion, le minion modifie son niveau
-   * de connerie
-   */
+  /** avec la potion, le minion modifie son niveau de connerie  **/
   def modifieConnerie(gain:Int): Int = {
     var niveauDeConnerie : Int = niveauDeConnerie + gain
     return niveauDeConnerie
   }
   
-  /*
-   * connaitre le propriétaire du minion
-   */
+  /** connaitre le propriétaire du minion **/
   def getProprio(): String = {
     var pseudo : String = "toto"
     return pseudo;
   }
   
-  /* 
-   * connaitre la position du minion
-   */
-  def getPositionMinion(): Position = {
-    
-  }
+  /** connaitre la position du minion sur la carte **/
+  def getPositionMinion(): Position
   
 }

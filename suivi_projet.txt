@@ -1,0 +1,13 @@
+Correction du 8/11/2016 :
+
+
+* faire un trait Lieu duquel hérite : - les lieux de combats
+  	   	      	     	      	    	      - un lieu où on achèterait les potions
+						      - des lieux à ajouter aux périodes de fêtes par exemple
+
+* accentuer la générécité du code (sans en faire trop) avec des traits/interfaces
+
+* penser à mettre des design pattern (observeur : quand un joueur se déplace par exemple)
+
+
+
