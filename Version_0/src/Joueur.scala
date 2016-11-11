@@ -1,33 +1,47 @@
+package joueur
 
-object Joueur {
+import minion.Minion
+import objet.Objet
 
-  /* Création du pseudo du joueur (ne pourra être modifié en cours de jeu) */
- var pseudo: String = null
+import scala.collection.mutable.ListBuffer
+
+class Joueur(var pseudo: String) {
+ 
+  /* Getteur pour le pseudo */
+  def nom:String = pseudo 
  
  /* Création des différentes variables */
  var nv_Mechant: Int = 0
- var nb_Minions: Int = 0
  
- /* Création d'une liste d'objet */
- var potion: List[Objet] = List();
+ /* Création d'une liste, où on peut ajouter/supprimer */
+ var list_Minions = new ListBuffer[Minion]()
  
- /** Attribution d'un pseudo à un joueur 
-  *  Ne fonctionne QUE si on ne lui a pas déjà attribuer un pseudo **/
- def nom_Joueur(nom: String)={
-   if(pseudo == null)
-     pseudo = nom
- }
+ /* Création d'une liste d'objet, où on peut ajouter/supprimer */
+ var list_potion = new ListBuffer[Objet]()
+ 
+// !!! AJOUT DE LA POSITION !!!!!! 
  
  /** Augmente le niveau de méchanceté du joueur **/
  def augmente_Niveau()={
  }
 
-  /** Augmente le nombre de Minions du joueur de nb **/
- def augmente_Minion(nb: Int)={
+  /** Ajout un minion dans la liste 
+   *  proprietaire : Joueur (appeler le getteur) 
+   *  position : Position (utiliser la position du joueur) **/
+ def add_Minion(niveauDeConnerie: Int, prenom: String)={
+
+   /*  var minion = new Minion( ... )
+    *  list_Minions += minion */
+   
  }
  
- /** Diminue le nombre de Minions du joueur de nb **/
- def diminue_Minion(nb: Int)={
+ /** Supprime un minion dans la liste 
+  *  proprietaire : Joueur (appeler le getteur) 
+  *  position : Position (utiliser la position du joueur) **/
+ def delete_Minion(niveauDeConnerie: Int, prenom: String)={
+   
+   /* var minion = new Minion( ... )
+    * list_Minions -= minion */
  }
  
  /** Ajout un objet à la liste **/
@@ -38,7 +52,6 @@ object Joueur {
  /** supprime un objet à la liste **/
  def delete(obj: Objet)={
    
- } 
- def main(args: Array[String]) {
  }
+ 
 }
