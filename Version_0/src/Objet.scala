@@ -16,7 +16,7 @@ abstract class Objet {
 
 def getPositionObjet(): Position = { 
    var p : Position = position
-return p;
+  return p;
 }
  
  
