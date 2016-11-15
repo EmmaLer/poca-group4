@@ -10,4 +10,19 @@ Correction du 8/11/2016 :
 * penser à mettre des design pattern (observeur : quand un joueur se déplace par exemple)
 
 
+15/11/2016 :
 
+classe joueur changer les implémentations d'objet et de minion
+car ce sont des classes abstraites. Pour les classes Joueur et Minion,
+décider comment gérer la relation. Quand un Joueur attrape un
+Minion. Le Minion a le nom du Joueur dans ses attributs
+
+Emmanuelle : Coordonnées, Carte, Position 2D 3D et déplacement
+
+Elodie : implémenter tests pour attraper minion/objet, poséder
+minion/objet
+
+Samia : créer un joueur qui se déplace sur la carte
+
+pour la version 1 : faire au moins une implémentation de chaque classe
+et les tester. Voir les interactions entre les différentes classes.
