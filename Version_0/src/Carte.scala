@@ -1,4 +1,5 @@
 import Array._
+import position.Position
 
 object Carte extends Position{
   
@@ -9,7 +10,7 @@ object Carte extends Position{
     var i,j=0;
     for(i <- 0 to x){
       for(j <- 0 to y){
-        p = 0;// a revoir
+        p(i)(j) = 0;// a revoir
       }
     }
   }

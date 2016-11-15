@@ -16,11 +16,16 @@ abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
   
   /** connaitre le propriétaire du minion **/
   def getProprio(): String = {
-    var pseudo : String = "toto"
-    return pseudo;
+    if (proprietaire != null) {
+      return proprietaire.nom;
+    } else {
+      return "minion libre";
+    }  
   }
   
   /** connaitre la position du minion sur la carte **/
   def getPositionMinion(): Position
+  
+  def combattre(): Unit
   
 }
