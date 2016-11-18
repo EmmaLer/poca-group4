@@ -20,10 +20,8 @@ class Joueur(var pseudo: String) {
  /* Création d'une liste d'objet, où on peut ajouter/supprimer */
  var list_potion = new ListBuffer[Objet]()
  
- /* La position du joueur 
-  * Initialisation de la position à (0,0) */
- 
  // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ /* Initialement le joueur est en position (0,0) */
  var position = new Position(0,0)
  
  /** Augmente le niveau de méchanceté du joueur **/
@@ -52,11 +50,15 @@ class Joueur(var pseudo: String) {
  
  /** Ajout un objet à la liste **/
  def add(obj: Objet)={
-  
+ 
+   list_potion += obj
+   
  }
  
  /** supprime un objet à la liste **/
  def delete(obj: Objet)={
+   
+   list_potion -= obj
    
  }
  

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="delivrables/skeleton/src"/>
+	<classpathentry kind="src" path="Version_0/src"/>
+	<classpathentry kind="lib" path=".metadata/.plugins/org.scala-ide.sdt.core/compiler-interfaces/2.11.8/compiler-interface.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
