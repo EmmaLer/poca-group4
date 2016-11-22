@@ -1,5 +1,6 @@
-import coordonnees2d.Coordonnees2D
+package coordonnees3d
+import abstractcoordonnees.AbstractCoordonnees
 
-class Coordonnees3D (var x,y,z:Double)extends AbstractCoordonnees(var x,y:Double){
+class Coordonnees3D (var x:Double,var y: Double, var z:Double)extends AbstractCoordonnees( x:Double, y:Double){
   
 }

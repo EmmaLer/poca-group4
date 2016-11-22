@@ -2,7 +2,7 @@ package joueur
 
 import mGentil.MinionGentil
 import objet.Objet
-import position2d.Position2D
+import abstractcoordonnees.AbstractCoordonnees
 import coordonnees2d.Coordonnees2D
 
 import scala.collection.mutable.ListBuffer
@@ -23,7 +23,8 @@ class Joueur(var pseudo: String) {
  
  // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  /* Initialement le joueur est en position (0,0) */
- var position = new Position2D(new Coordonnees2D(0.0,0.0))
+ /**ICI A METTRE DANS LES REGLES DU JEU !!*/
+ var position = new AbstractCoordonnees(new Coordonnees2D(0.0,0.0))
  
  /** Augmente le niveau de méchanceté du joueur **/
  def augmente_Niveau()={

@@ -2,11 +2,11 @@
 
 package minion
 
-import position2d.Position2D
+import abstractcoordonnees.AbstractCoordonnees
 import joueur.Joueur
 
 abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
-     var position : Position2D) {
+     var position : AbstractCoordonnees) {
     
   var proprietaire : Joueur = null
   /** avec la potion, le minion modifie son niveau de connerie  **/
@@ -25,7 +25,7 @@ abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
   }
   
   /** connaitre la position du minion sur la carte **/
-  def getPositionMinion(): Position2D
+  def getPositionMinion(): AbstractCoordonnees
   
   def combattre(): Unit
   
