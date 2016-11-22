@@ -1,3 +1,5 @@
+MAIL DU PROF : gjaber@pps.univ-paris-diderot.fr
+-------------------------------------------------------
 Correction du 8/11/2016 :
 
 
@@ -9,7 +11,7 @@ Correction du 8/11/2016 :
 
 * penser à mettre des design pattern (observeur : quand un joueur se déplace par exemple)
 
-
+-------------------------------------------------------
 15/11/2016 :
 
 classe joueur changer les implémentations d'objet et de minion
@@ -27,13 +29,36 @@ Samia : créer un joueur qui se déplace sur la carte
 pour la version 1 : faire au moins une implémentation de chaque classe
 et les tester. Voir les interactions entre les différentes classes.
 
-
+-------------------------------------------------------
 22/11/2016 :
 
 * revoir l'architecture du projet et penser à intégrer le multijoueur
-  avec environnement client-serveur, BD et interface graphique.
+  avec environnement client-serveur (LEA), pour enregistrer les données
+  utiliser des fichiers et serialiser les objets (SAMIA), interface graphique. Revoir
+  les classes objets+ MVC.
 
 * revoir les classes suivantes pour faire l'implémentation des tests :
   - Position2D
   
 Pour importer un object, on utilise "package object"
+
+Pour les positions dans chaque objet, privilégier l'utilisation de la
+classe Abstract. Coord2D Coord3D héritent de AbstractClass
+
+Pour ce soir :
+TESTS: 
+     - créer un joueur (ELODIE)
+     - attraper un minion (ELODIE)
+     - attraper un objet (SAMIA)
+IMPLEMENTATION: (EMMANUELLE)
+	- Compléter les Coords
+	- pouvoir créer une carte avec des pos/coord
+	- faire position2d (quel lien ???)
+	- rajouter les positions dans les tests
+
+Pour la continuité du projet : (TOUTES)
+     - envoyer au plus tôt la nouvelle architecture du projet au prof
+     avec client serveur, serialisable, MVC dans un PDF. et montrer
+     les liens entre les différentes entités
+
+-------------------------------------------------------
