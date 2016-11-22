@@ -24,7 +24,7 @@ class Joueur(var pseudo: String) {
  // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  /* Initialement le joueur est en position (0,0) */
  /**ICI A METTRE DANS LES REGLES DU JEU !!*/
- var position = new AbstractCoordonnees(new Coordonnees2D(0.0,0.0))
+ var position = new AbstractCoordonnees(0.0,0.0)
  
  /** Augmente le niveau de méchanceté du joueur **/
  def augmente_Niveau()={

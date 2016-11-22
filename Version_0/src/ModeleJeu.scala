@@ -1,9 +1,20 @@
+package modelejeu
 import Array._
+import joueur.Joueur
 
-class ModeleJeu {
+
+class ModeleJeu (var sizeX:Int,var sizeY:Int){
   //ici on mettra soit les regles du jeu
   
-    def plateau (x:Int, y:Int)= { /* A mettre dans le main je pense !*/
+  protected var joueur1: Joueur; 
+  
+  def this(){
+    this(5,5);
+    plateau(sizeX,sizeY);
+  }
+  
+  //Création de la carte
+  def plateau (x:Int, y:Int){ 
     var p = ofDim[Int](x,y);
     var i,j=0;
     for(i <- 0 to x){
@@ -11,5 +22,11 @@ class ModeleJeu {
         p(i)(j) = 0;
       }
     }
+    for (i<- 0 to x){
+      for(j<-0 to y)
+        println(p(i)(j));
+      println("/n");
+    }
   }
+  
 }
