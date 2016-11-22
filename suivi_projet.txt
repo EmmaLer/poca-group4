@@ -26,3 +26,14 @@ Samia : créer un joueur qui se déplace sur la carte
 
 pour la version 1 : faire au moins une implémentation de chaque classe
 et les tester. Voir les interactions entre les différentes classes.
+
+
+22/11/2016 :
+
+* revoir l'architecture du projet et penser à intégrer le multijoueur
+  avec environnement client-serveur, BD et interface graphique.
+
+* revoir les classes suivantes pour faire l'implémentation des tests :
+  - Position2D
+  
+Pour importer un object, on utilise "package object"

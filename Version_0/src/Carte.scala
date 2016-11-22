@@ -1,7 +1,8 @@
 import Array._
-import position.Position
+import position2d.Position2D
+import coordonnees2d.Coordonnees2D
 
-object Carte extends Position{
+package object Carte extends Position2D(pos: Coordonnees2D){
  //en cours de revu
   
   def plateau (x:Int, y:Int)= { /* A mettre dans le main je pense !*/

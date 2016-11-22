@@ -1,8 +1,9 @@
 package joueur
 
-import minion.Minion
+import mGentil.MinionGentil
 import objet.Objet
-import position.Position
+import position2d.Position2D
+import coordonnees2d.Coordonnees2D
 
 import scala.collection.mutable.ListBuffer
 
@@ -15,14 +16,14 @@ class Joueur(var pseudo: String) {
  var nv_Mechant: Int = 0
  
  /* Création d'une liste, où on peut ajouter/supprimer */
- var list_Minions = new ListBuffer[Minion]()
+ var list_Minions = new ListBuffer[MinionGentil]()
  
  /* Création d'une liste d'objet, où on peut ajouter/supprimer */
  var list_potion = new ListBuffer[Objet]()
  
  // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  /* Initialement le joueur est en position (0,0) */
- var position = new Position(0,0)
+ var position = new Position2D(new Coordonnees2D(0.0,0.0))
  
  /** Augmente le niveau de méchanceté du joueur **/
  def augmente_Niveau()={
@@ -34,7 +35,7 @@ class Joueur(var pseudo: String) {
    *  position : Position (utiliser la position du joueur) **/
  def add_Minion(niveauDeConnerie: Int, prenom: String)={
 
-     var minion = new Minion(niveauDeConnerie, prenom, nom, position)
+     var minion = new MinionGentil(niveauDeConnerie, prenom, position)
      list_Minions += minion
    
  }
@@ -44,7 +45,7 @@ class Joueur(var pseudo: String) {
   *  position : Position (utiliser la position du joueur) **/
  def delete_Minion(niveauDeConnerie: Int, prenom: String)={
    
-    var minion = new Minion(niveauDeConnerie, prenom, nom, position)
+    var minion = new MinionGentil(niveauDeConnerie, prenom, position)
     list_Minions -= minion
  }
  

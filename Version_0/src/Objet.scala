@@ -1,31 +1,26 @@
 /* Classe des definition des objet */
 
-
-
 package objet 
 
 import joueur.Joueur
 import minion.Minion 
-import position.Position 
-import carte.Carte 
+import position2d.Position2D 
 
 abstract class Objet {
- var position : Position
-
+  var position : Position2D
+  var proprietaire : Joueur
  
-
-def getPositionObjet(): Position = { 
-   var p : Position = position
-  return p;
-}
+  def getPositionObjet(): Position2D = { 
+     var p : Position2D = position
+   return p;
+  }
  
- 
-def creerObjet( obj : Objet, p : Position ){
-  obj.position = p
-}
+  def creerObjet( obj : Objet, p : Position2D ){
+    obj.position = p
+  }
 
-/** verification de la methode remove **/
-def existe(p : Position): Boolean = {
+  /** verification de la methode remove **/
+  def existe(p : Position2D): Boolean = {
   if(position == p){
     return true
   }
@@ -34,11 +29,11 @@ return false
 
 
 def remove() = {
-  position = joueur.position 
+  position = null
 }
 }
 
-class Banana(p:Position, gain : Int) extends Objet ( p ){
+class Banana(p:Position2D) extends Objet{
   val gain = scala.util.Random
   
   def getGain () : Int = { 
@@ -56,11 +51,4 @@ class Banana(p:Position, gain : Int) extends Objet ( p ){
   }
   **/
   
-}
-
-  
-
-
-def main(args: Array[String]) {
-  var b : Banana = new 
 }
