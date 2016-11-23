@@ -10,7 +10,9 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int){
   
   def this(){
     this(5,5);
+    println("Lancement MinionGame !");
     plateau(sizeX,sizeY);
+    
   }
   
   //Création de la carte

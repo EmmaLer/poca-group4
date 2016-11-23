@@ -3,9 +3,8 @@
  *  et teste sur les interactions entre ces differents objets
  */
 package test
-
+import Array._
 import modelejeu.ModeleJeu
-import joueur.Joueur
 
 
 object Test {

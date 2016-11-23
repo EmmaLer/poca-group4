@@ -3,24 +3,25 @@
 package objet 
 
 import joueur.Joueur
-import minion.Minion 
-import position2d.Position2D 
+//import minion.Minion 
+import abstractcoordonnees.AbstractCoordonnees 
+
 
 abstract class Objet {
-  var position : Position2D
+  var position : AbstractCoordonnees
   var proprietaire : Joueur
  
-  def getPositionObjet(): Position2D = { 
-     var p : Position2D = position
+  def getPositionObjet(): AbstractCoordonnees = { 
+     var p : AbstractCoordonnees = position
    return p;
   }
  
-  def creerObjet( obj : Objet, p : Position2D ){
+  def creerObjet( obj : Objet, p : AbstractCoordonnees ){
     obj.position = p
   }
 
   /** verification de la methode remove **/
-  def existe(p : Position2D): Boolean = {
+  def existe(p : AbstractCoordonnees): Boolean = {
   if(position == p){
     return true
   }
@@ -33,7 +34,7 @@ def remove() = {
 }
 }
 
-class Banana(p:Position2D) extends Objet{
+class Banana(p:AbstractCoordonnees) extends Objet{
   val gain = scala.util.Random
   
   def getGain () : Int = { 
