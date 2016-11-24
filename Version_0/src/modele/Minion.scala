@@ -11,8 +11,7 @@ abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
   var proprietaire : Joueur = null
   /** avec la potion, le minion modifie son niveau de connerie  **/
   def modifieConnerie(gain:Int): Int = {
-    var niveauDeConnerie : Int = niveauDeConnerie + gain
-    return niveauDeConnerie
+    return niveauDeConnerie + gain
   }
   
   /** connaitre le propriétaire du minion **/
