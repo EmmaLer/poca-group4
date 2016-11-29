@@ -32,7 +32,9 @@ def remove() = {
 }
 }
 
-class Banana(p:AbstractCoordonnees) extends Objet{
+class Banana extends Objet{
+  var position  = new AbstractCoordonnees(0.0,0.0)
+  var proprietaire  = new Joueur(null)
   val gain = scala.util.Random
   
   def getGain () : Int = { 

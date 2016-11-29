@@ -22,9 +22,8 @@ abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
   }
   
   /** connaitre la position du minion sur la carte **/
-  def getPositionMinion(): AbstractCoordonnees = 
-   { return position.x, position.y }
+  def getPositionMinion(): AbstractCoordonnees = new AbstractCoordonnees(position.x, position.y)
   
-  def combattre(): Unit 
+  def combattre(): Unit = {println("à implémenter")}
   
 }

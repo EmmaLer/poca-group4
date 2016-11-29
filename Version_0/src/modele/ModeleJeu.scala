@@ -5,7 +5,7 @@ import Array._
 class ModeleJeu (var sizeX:Int,var sizeY:Int){
   //ici on mettra soit les regles du jeu
   
-  protected var joueur1: Joueur; 
+  protected var joueur1: Joueur = new Joueur(null) 
   
   def this(){
     this(5,5);
