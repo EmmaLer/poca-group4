@@ -62,3 +62,20 @@ Pour la continuité du projet : (TOUTES)
      les liens entre les différentes entités
 
 -------------------------------------------------------
+29/11/2016 :
+
+A faire :
++ Minion une seule classe et faire des traits Gentil/Minion on peut
+mettre nuire et aider dans une même classe 
++ faire un type Générique pour les objets dessiner() afficher()
++ Architecture à mettre à jour
+
+Emnanuelle : déplacement
+Elodie : Minion + Carte
+Léa : interaction Créer un joueur / Créer un minion / Créer un objet /
+Attraper / Relacher
+Samia : Comment interagissent server Serialisable et code
+
+Règles du jeu :
+       + attaques proportionnelles des minions lors du combat à leur stupidité
+       + à rajouter plus tard
