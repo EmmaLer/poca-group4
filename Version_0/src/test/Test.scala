@@ -7,8 +7,8 @@ import Array._
 import modele.ModeleJeu
 
 
-object Test extends App{
-  def main(args:Array[String]){
+object Test extends App {
+  override def main(args:Array[String]){
     var jeu = new ModeleJeu();
     
      /*
