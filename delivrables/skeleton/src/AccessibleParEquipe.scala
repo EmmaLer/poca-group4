@@ -1,5 +1,0 @@
-package accessibleParEquipe
-
-trait AccessibleParEquipe {
-  
-}
