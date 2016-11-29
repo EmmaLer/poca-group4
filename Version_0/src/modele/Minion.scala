@@ -1,10 +1,8 @@
 /** classe abstraite de définition des Minions **/
 
-package minion
+package modele
 
-import abstractcoordonnees.AbstractCoordonnees
-import joueur.Joueur
-
+import controleur.AbstractCoordonnees
 abstract class Minion (var niveauDeConnerie: Int, var prenom: String,
      var position : AbstractCoordonnees) {
     

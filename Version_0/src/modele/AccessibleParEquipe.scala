@@ -1,4 +1,4 @@
-package accessibleParEquipe
+package modele
 
 trait AccessibleParEquipe {
   

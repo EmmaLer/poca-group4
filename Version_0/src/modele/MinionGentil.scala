@@ -1,9 +1,7 @@
 /** classe MinionGentil qui hérite de Minion **/
-package mGentil
+package modele
 
-import minion.Minion
-import joueur.Joueur
-import abstractcoordonnees.AbstractCoordonnees
+import controleur.AbstractCoordonnees
 
 class MinionGentil(niveauDeConnerie: Int, prenom: String, position : AbstractCoordonnees)
   extends Minion(niveauDeConnerie: Int, prenom: String, position : AbstractCoordonnees) {

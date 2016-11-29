@@ -1,5 +1,5 @@
 
-package controleurjeu
+package controleur
 
 class ControleurJeu {
   // doit prendre le modele correspondant au jeu (le main ou le test)

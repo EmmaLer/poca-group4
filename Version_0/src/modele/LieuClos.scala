@@ -2,7 +2,7 @@
  *  positions sur la carte
  */
 
-package lieuClos
+package modele
 
 trait LieuClos {
   

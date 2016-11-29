@@ -1,7 +1,5 @@
-package mMechant
-import minion.Minion
-import joueur.Joueur
-import abstractcoordonnees.AbstractCoordonnees
+package modele
+import controleur.AbstractCoordonnees
 
 
 class MinionMechant(niveauDeConnerie: Int, prenom: String,  position : AbstractCoordonnees)

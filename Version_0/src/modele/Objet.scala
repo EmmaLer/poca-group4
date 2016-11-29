@@ -1,10 +1,8 @@
 /* Classe des definition des objet */
 
-package objet 
+package modele
 
-import joueur.Joueur
-//import minion.Minion 
-import abstractcoordonnees.AbstractCoordonnees 
+import controleur.AbstractCoordonnees
 
 
 abstract class Objet {

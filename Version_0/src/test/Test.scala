@@ -4,10 +4,10 @@
  */
 package test
 import Array._
-import modelejeu.ModeleJeu
+import modele.ModeleJeu
 
 
-object Test {
+object Test extends App{
   def main(args:Array[String]){
     var jeu = new ModeleJeu();
     

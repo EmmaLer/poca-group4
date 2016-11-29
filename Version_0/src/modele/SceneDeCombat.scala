@@ -1,10 +1,6 @@
-package sceneDeCombat
+package modele
 
-import accessibleParEquipe.AccessibleParEquipe
-import lieu.Lieu
-import lieuClos.LieuClos
-import abstractcoordonnees.AbstractCoordonnees
-
+import controleur.AbstractCoordonnees
 
 class SceneDeCombat(position : AbstractCoordonnees) extends Lieu(position : AbstractCoordonnees) with AccessibleParEquipe with LieuClos {
   

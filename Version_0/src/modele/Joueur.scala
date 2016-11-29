@@ -1,10 +1,6 @@
-package joueur
+package modele
 
-import mGentil.MinionGentil
-import objet.Objet
-import abstractcoordonnees.AbstractCoordonnees
-import coordonnees2d.Coordonnees2D
-
+import controleur.AbstractCoordonnees
 import scala.collection.mutable.ListBuffer
 
 class Joueur(var pseudo: String) {

@@ -1,6 +1,4 @@
-package coordonnees2d
-
-import abstractcoordonnees.AbstractCoordonnees
+package controleur
 
 class Coordonnees2D ( x: Double, y: Double)extends AbstractCoordonnees(x:Double,y:Double){
    

@@ -1,6 +1,5 @@
-package modelejeu
+package modele
 import Array._
-import joueur.Joueur
 
 
 class ModeleJeu (var sizeX:Int,var sizeY:Int){
