@@ -30,10 +30,13 @@ return false
 def remove() = {
   position = null
 }
+
+   override def toString: String =
+     "" + position
 }
 
 class Banana extends Objet{
-  var position  = new AbstractCoordonnees(0.0,0.0)
+  var position  = new AbstractCoordonnees(0,0)
   var proprietaire  = new Joueur(null)
   val gain = scala.util.Random
   
@@ -51,5 +54,5 @@ class Banana extends Objet{
     }
   }
   **/
-  
+   
 }

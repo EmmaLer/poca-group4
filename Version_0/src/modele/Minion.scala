@@ -3,8 +3,7 @@
 package modele
 
 import controleur.AbstractCoordonnees
-class Minion(var niveauDeConnerie: Int, var prenom: String,
-     var position : AbstractCoordonnees) extends Mechancete {
+class Minion(var niveauDeConnerie: Int, var prenom: String, var position : AbstractCoordonnees) extends Mechancete {
     
   var proprietaire : Joueur = null
   /** avec la potion, le minion modifie son niveau de connerie  **/
@@ -29,5 +28,10 @@ class Minion(var niveauDeConnerie: Int, var prenom: String,
   def aiderProprio = println("banana")
   
   def nuireProprio = println("ouh lakato")
+  
+  /** Return les paramètres du minion **/
+  override def toString: String =
+    "Nom: " + prenom + ", Nvx de connerie " + niveauDeConnerie + ", " + position 
+    
   
 }
