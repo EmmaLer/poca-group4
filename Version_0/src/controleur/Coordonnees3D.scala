@@ -1,5 +1,5 @@
 package controleur
 
-class Coordonnees3D ( x:Double, y: Double, var z:Double)extends AbstractCoordonnees( x:Double, y:Double){
+class Coordonnees3D ( x:Int, y: Int, var z:Int)extends AbstractCoordonnees( x:Int, y:Int){
   
 }
