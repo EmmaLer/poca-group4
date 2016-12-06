@@ -30,6 +30,9 @@ return false
 def remove() = {
   position = null
 }
+
+   override def toString: String =
+     "" + position
 }
 
 class Banana extends Objet{
@@ -51,5 +54,5 @@ class Banana extends Objet{
     }
   }
   **/
-  
+   
 }

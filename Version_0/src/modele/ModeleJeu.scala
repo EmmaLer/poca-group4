@@ -9,14 +9,13 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int){
   //ici on mettra soit les regles du jeu
   
   var joueur1: Joueur = new Joueur(null) 
-  
+
   def this(){
     this(5,5);
     sizeX = 5;
     sizeY = 5;
     println("Lancement MinionGame !");
-    plateau(sizeX,sizeY);
-    
+    plateau(sizeX,sizeY); 
   }
   
   //Création de la carte -- Créer une classe Carte
@@ -34,6 +33,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int){
       println();
     }
   }
+
   
   def deplacement (pos1: Coordonnees2D, pos2: Coordonnees2D){
     if (!pos1.equals(pos2)){

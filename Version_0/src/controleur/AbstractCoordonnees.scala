@@ -7,4 +7,6 @@ class AbstractCoordonnees (var x:Int,var y:Int){
   def changeToCoordonnees2D () :Coordonnees2D={
     return (new Coordonnees2D (x,y));
   }
+    override def toString: String =
+    "(" + x + ", " + y + ")" 
 }
