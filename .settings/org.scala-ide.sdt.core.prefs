@@ -36,10 +36,14 @@ recompileOnMacroDef=true
 relationsDebug=false
 scala.compiler.additionalParams=
 <<<<<<< HEAD
+<<<<<<< HEAD
 scala.compiler.installation=-86468331
 =======
 scala.compiler.installation=-1561006899
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
+=======
+scala.compiler.installation=-1561006899
+>>>>>>> refs/remotes/origin/master
 scala.compiler.sourceLevel=2.11
 scala.compiler.useProjectSettings=true
 stopBuildOnError=true

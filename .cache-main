@@ -31,6 +31,7 @@ name hashing:
 0 -> false
 products:
 <<<<<<< HEAD
+<<<<<<< HEAD
 28 items
 /home/lea/git/poca-group4/Version_0/src/controleur/AbstractCoordonnees.scala -> /home/lea/git/poca-group4/bin/controleur/AbstractCoordonnees.class
 /home/lea/git/poca-group4/Version_0/src/controleur/ControleurJeu.scala -> /home/lea/git/poca-group4/bin/controleur/ControleurJeu.class
@@ -119,6 +120,8 @@ direct source dependencies:
 /home/lea/git/poca-group4/Version_0/src/test/Test.scala -> /home/lea/git/poca-group4/Version_0/src/modele/Minion.scala
 /home/lea/git/poca-group4/Version_0/src/test/Test.scala -> /home/lea/git/poca-group4/Version_0/src/modele/ModeleJeu.scala
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 25 items
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\AbstractCoordonnees.scala -> C:\Users\Emma\git\poca-group4\bin\controleur\AbstractCoordonnees.class
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\ControleurJeu.scala -> C:\Users\Emma\git\poca-group4\bin\controleur\ControleurJeu.class
@@ -209,6 +212,7 @@ direct external dependencies:
 public inherited source dependencies:
 6 items
 <<<<<<< HEAD
+<<<<<<< HEAD
 /home/lea/git/poca-group4/Version_0/src/controleur/Coordonnees2D.scala -> /home/lea/git/poca-group4/Version_0/src/controleur/AbstractCoordonnees.scala
 /home/lea/git/poca-group4/Version_0/src/controleur/Coordonnees3D.scala -> /home/lea/git/poca-group4/Version_0/src/controleur/AbstractCoordonnees.scala
 /home/lea/git/poca-group4/Version_0/src/modele/Minion.scala -> /home/lea/git/poca-group4/Version_0/src/modele/Mechancete.scala
@@ -216,6 +220,8 @@ public inherited source dependencies:
 /home/lea/git/poca-group4/Version_0/src/modele/SceneDeCombat.scala -> /home/lea/git/poca-group4/Version_0/src/modele/Lieu.scala
 /home/lea/git/poca-group4/Version_0/src/modele/SceneDeCombat.scala -> /home/lea/git/poca-group4/Version_0/src/modele/LieuClos.scala
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\Coordonnees2D.scala -> C:\Users\Emma\git\poca-group4\Version_0\src\controleur\AbstractCoordonnees.scala
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\Coordonnees3D.scala -> C:\Users\Emma\git\poca-group4\Version_0\src\controleur\AbstractCoordonnees.scala
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Minion.scala -> C:\Users\Emma\git\poca-group4\Version_0\src\modele\Mechancete.scala
@@ -234,6 +240,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
+<<<<<<< HEAD
 <<<<<<< HEAD
 28 items
 /home/lea/git/poca-group4/Version_0/src/controleur/AbstractCoordonnees.scala -> controleur.AbstractCoordonnees
@@ -318,6 +325,8 @@ source stamps:
 /home/lea/git/poca-group4/Version_0/src/modele/Zone.scala -> hash(e3d6f8f5e416b63f1b85af96da8d720c070a0e43)
 /home/lea/git/poca-group4/Version_0/src/test/Test.scala -> hash(eb804211ac2879204b6d058109b6b12c4e016245)
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 25 items
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\AbstractCoordonnees.scala -> controleur.AbstractCoordonnees
 C:\Users\Emma\git\poca-group4\Version_0\src\controleur\ControleurJeu.scala -> controleur.ControleurJeu
@@ -393,7 +402,10 @@ C:\Users\Emma\git\poca-group4\Version_0\src\modele\SceneDeCombat.scala -> hash(5
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Zone.scala -> hash(f26a972e9bce60584542c3594291364b86aa36da)
 C:\Users\Emma\git\poca-group4\Version_0\src\test\Test.scala -> hash(07be1fc62834fd35e7127e187f8582782838b267)
 C:\Users\Emma\git\poca-group4\Version_0\src\vue\VueJeu.scala -> hash(ab87556a5d2966c4254cfc3cf898ad448d821f85)
+<<<<<<< HEAD
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
+=======
+>>>>>>> refs/remotes/origin/master
 binary stamps:
 2 items
 /home/lea/.p2/pool/plugins/org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar -> lastModified(1475934870000)
@@ -511,6 +523,10 @@ C:\Users\Emma\git\poca-group4\Version_0\src\modele\Carte.scala ->
 AAAAAAAAAAA=
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Generic.scala -> 
 AAAAAAAAAAA=
+C:\Users\Emma\git\poca-group4\Version_0\src\modele\Carte.scala -> 
+AAAAAAAAAAA=
+C:\Users\Emma\git\poca-group4\Version_0\src\modele\Generic.scala -> 
+AAAAAAAAAAA=
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Joueur.scala -> 
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
 AAAAAAAAAAA=
@@ -527,12 +543,18 @@ AAAAAAAAAAA=
 =======
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Mechancete.scala -> 
 AAAAAAAAAAA=
+<<<<<<< HEAD
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Minion.scala -> 
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
 AAAAAAAAAAA=
 /home/lea/git/poca-group4/Version_0/src/modele/Mechancete.scala -> 
 AAAAAAAAAAA=
 /home/lea/git/poca-group4/Version_0/src/modele/Mechant.scala -> 
+=======
+C:\Users\Emma\git\poca-group4\Version_0\src\modele\Mechancete.scala -> 
+AAAAAAAAAAA=
+C:\Users\Emma\git\poca-group4\Version_0\src\modele\Minion.scala -> 
+>>>>>>> refs/remotes/origin/master
 AAAAAAAAAAA=
 /home/lea/git/poca-group4/Version_0/src/modele/Minion.scala -> 
 AAAAAAAAAAA=
@@ -549,17 +571,25 @@ AAAAAAAAAAA=
 =======
 C:\Users\Emma\git\poca-group4\Version_0\src\modele\Zone.scala -> 
 AAAAAAAAAAA=
+C:\Users\Emma\git\poca-group4\Version_0\src\modele\Zone.scala -> 
+AAAAAAAAAAA=
 C:\Users\Emma\git\poca-group4\Version_0\src\test\Test.scala -> 
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
 AAAAAAAAAAA=
 C:\Users\Emma\git\poca-group4\Version_0\src\vue\VueJeu.scala -> 
 AAAAAAAAAAA=
+C:\Users\Emma\git\poca-group4\Version_0\src\vue\VueJeu.scala -> 
+AAAAAAAAAAA=
 compilations:
+<<<<<<< HEAD
 <<<<<<< HEAD
 84 items
 =======
 28 items
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
+=======
+28 items
+>>>>>>> refs/remotes/origin/master
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+x1qx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+yhMp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+23ZJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
@@ -569,6 +599,7 @@ compilations:
 06 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+5NCd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 07 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+5xUF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 08 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK+9q591cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
+<<<<<<< HEAD
 <<<<<<< HEAD
 09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWM8Z93J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHS9ob21lL2xlYS9naXQvcG9jYS1ncm91cDQvYmludAAnL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9WZXJzaW9uXzAvc3Jj
 10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWM81NMp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHS9ob21lL2xlYS9naXQvcG9jYS1ncm91cDQvYmludAAnL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9WZXJzaW9uXzAvc3Jj
@@ -646,6 +677,8 @@ compilations:
 82 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWNPHx+V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHS9ob21lL2xlYS9naXQvcG9jYS1ncm91cDQvYmludAAnL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9WZXJzaW9uXzAvc3Jjc3EAfgAFdAAdL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9iaW50ADIvaG9tZS9sZWEvZ2l0L3BvY2EtZ3JvdXA0L2RlbGl2cmFibGVzL3NrZWxldG9uL3NyYw==
 83 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWNPIj5x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHS9ob21lL2xlYS9naXQvcG9jYS1ncm91cDQvYmludAAnL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9WZXJzaW9uXzAvc3Jjc3EAfgAFdAAdL2hvbWUvbGVhL2dpdC9wb2NhLWdyb3VwNC9iaW50ADIvaG9tZS9sZWEvZ2l0L3BvY2EtZ3JvdXA0L2RlbGl2cmFibGVzL3NrZWxldG9uL3NyYw==
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK/ZNQp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWK/ZiKV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWMnASMl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
@@ -665,4 +698,7 @@ compilations:
 25 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWNOkzot1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 26 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWNOl4rt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
 27 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWNOl5dd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIUM6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XGJpbnQAK0M6XFVzZXJzXEVtbWFcZ2l0XHBvY2EtZ3JvdXA0XFZlcnNpb25fMFxzcmNzcQB+AAV0ACFDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxiaW50ADZDOlxVc2Vyc1xFbW1hXGdpdFxwb2NhLWdyb3VwNFxkZWxpdnJhYmxlc1xza2VsZXRvblxzcmM=
+<<<<<<< HEAD
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
+=======
+>>>>>>> refs/remotes/origin/master

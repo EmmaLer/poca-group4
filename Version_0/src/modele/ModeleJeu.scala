@@ -10,8 +10,11 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int){
   
   var joueur1: Joueur = new Joueur(null) 
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+=======
+>>>>>>> refs/remotes/origin/master
   
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
   def this(){
@@ -49,5 +52,8 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int){
       //Je ne fais rien mais je préviens l'observateur pour que le controleur le sache
     }
   }
+<<<<<<< HEAD
 >>>>>>> 29167b7d13caddc639e63d9ed2c28a283a315739
+=======
+>>>>>>> refs/remotes/origin/master
 }
