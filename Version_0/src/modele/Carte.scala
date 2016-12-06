@@ -11,10 +11,12 @@ import scala.collection.mutable.ListBuffer
 
 object Carte {
 
-  var Composants = new ListBuffer[AbstractCoordonnees]
+  var List_Zones = new ListBuffer[Zone]
   
   
   def affiche = println("j'affiche la carte")
+  def addZone(z : Zone) = List_Zones += z
+  def removeZone(z : Zone) = List_Zones -= z
   
   
 }

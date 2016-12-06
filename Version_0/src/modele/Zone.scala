@@ -25,7 +25,7 @@ class Zone(val Superficie : Integer) {
   val ComponentsObjet : ListBuffer[Objet] = null 
   //val ComponentsLieu : ListBuffer[Magasin]
   
-  /** méthode de création lorsqu'on crée la zone **/
+  /** méthode de création lorsqu'on crée la zone ou qu'un joueur libere un objet ou un minion**/
   def addMinion(m : Minion) = ComponentsMinion += m
   def addObj(o : Objet) = ComponentsObjet += o
   
@@ -45,5 +45,7 @@ class Zone(val Superficie : Integer) {
   /** TODO : reflechir aux methodes à implementer les zones 
    *  contiennent des AbstractCoordonnees qui contiennent des objets génériques
    */
+  
+  //def creeZone(
   
 }
