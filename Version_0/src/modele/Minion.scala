@@ -3,7 +3,7 @@
 package modele
 
 import controleur.AbstractCoordonnees
-class Minion(var niveauDeConnerie: Int, var prenom: String, var position : AbstractCoordonnees) extends Mechancete {
+abstract class Minion(var niveauDeConnerie: Int, var prenom: String, var position : AbstractCoordonnees) {
     
   var proprietaire : Joueur = null
   /** avec la potion, le minion modifie son niveau de connerie  **/
@@ -23,7 +23,7 @@ class Minion(var niveauDeConnerie: Int, var prenom: String, var position : Abstr
   /** connaitre la position du minion sur la carte **/
   def getPositionMinion(): AbstractCoordonnees = new AbstractCoordonnees(position.x, position.y)
   
-  def combattre() = println("Je vais te taper dessus !")
+  def combattre = println("Je vais te taper dessus !")
   
   def aiderProprio = println("banana")
   

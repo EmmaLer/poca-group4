@@ -6,6 +6,7 @@ package test
 import Array._
 import modele.ModeleJeu
 import modele.Minion
+import modele.Mechancete
 import controleur.AbstractCoordonnees
 
 object Test {
@@ -13,8 +14,8 @@ object Test {
     var jeu = new ModeleJeu();
 
     /* Création des minions */
-    var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0));
-    var personnage1: Minion = new Minion(10, "Arry", new AbstractCoordonnees(0, 0));
+    var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
+    var personnage1: Minion = new Minion(10, "Arry", new AbstractCoordonnees(0, 0)) with Mechancete;
     
     /* Ajout de minions au joueur1 */
     jeu.joueur1.add_Minion(personnage1);

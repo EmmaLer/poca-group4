@@ -8,7 +8,7 @@ import controleur.Coordonnees2D
 class ModeleJeu (var sizeX:Int,var sizeY:Int){
   //ici on mettra soit les regles du jeu
   
-  var joueur1: Joueur = new Joueur(null) 
+  var joueur1: Joueur = new Joueur("toma") 
 
   def this(){
     this(5,5);
