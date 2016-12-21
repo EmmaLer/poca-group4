@@ -1,0 +1,5 @@
+Comment implémenter la carte ?
+
+Besoins :
+- lorsqu'un joueur est sur la carte, il doit pouvoir interroger le jeu pour savoir quels autres joueurs, quels minions, quelles arènes sont sur la carte,
+- on veut des 
