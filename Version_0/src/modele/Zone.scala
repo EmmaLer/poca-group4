@@ -15,7 +15,7 @@ class Zone(val Superficie : Integer) {
   
   /** TODO : à la création de la surface il faut vérifier que les AbstractCoordonnees  
    *  sont bien adjacentes et que ces coordonnees ne sont pas utilisees pour d'autres
-   *  zones
+   *  zones. Faire une zone de base. Que l'on peut modifier après
    */
   var Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
   
