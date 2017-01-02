@@ -56,6 +56,19 @@ class Joueur(val pseudo: String) {
       list_potion -= obj
   }
 
+  /**Liste des déplacements faisables -- ne regarde pas si dans carte car controleur le fait !!*/
+  def mvtAtteignable (pos :AbstractCoordonnees):ListBuffer [AbstractCoordonnees] ={
+    var l = new ListBuffer [AbstractCoordonnees];
+    l.+=(new AbstractCoordonnees (pos.x+1,pos.y))
+    l.+=(new AbstractCoordonnees (pos.x-1,pos.y))
+    l.+=(new AbstractCoordonnees (pos.x,pos.y+1))
+    l.+=(new AbstractCoordonnees (pos.x,pos.y-1)) 
+    l.+=(new AbstractCoordonnees (pos.x+1,pos.y+1))
+    l.+=(new AbstractCoordonnees (pos.x-1,pos.y+1))
+    l.+=(new AbstractCoordonnees (pos.x-1,pos.y-1))
+    l.+=(new AbstractCoordonnees (pos.x+1,pos.y-1)) 
+  }
+  
   /** Vérifie si list_potion est vide **/
   def isEmpty_Potion: Boolean =
     list_potion.isEmpty
@@ -63,4 +76,6 @@ class Joueur(val pseudo: String) {
   /** Affiche les paramètres du joueur **/
   override def toString: String =
     "Pseudo: " + nom + ", nvx de méchanceté: " + nv_Mechant + ", nb de minons: " + list_Minions.length + ", nb de potions: " + list_potion.length + "\n"
+    
+
 }
