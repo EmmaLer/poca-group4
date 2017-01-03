@@ -14,7 +14,7 @@ class ControleurJeu (var modele: ModeleJeu){
 			if(pos2.x >= 0 && pos2.x < modele.sizeX){
 				if (pos1.x >= 0 && pos1.x < modele.sizeY){
 					var mvtAtt = new ListBuffer [AbstractCoordonnees]()
-					mvtAtt = modele.joueur1.mvtAtteignable(pos1)
+					mvtAtt = modele.joueur.mvtAtteignable(pos1)
 					for (x <- mvtAtt){
 						if(pos2.equals(x))
 							return true
