@@ -6,29 +6,33 @@ package test
 import Array._
 import modele.ModeleJeu
 import modele.Minion
+import modele.Mechancete
 import controleur.AbstractCoordonnees
+import vue._
 
 object Test {
   def main(args: Array[String]) {
     var jeu = new ModeleJeu();
+    val ui = new VueJeu
+    println("End of main function")
 
     /* Création des minions */
-    var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0));
-    var personnage1: Minion = new Minion(10, "Arry", new AbstractCoordonnees(0, 0));
+    var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
+    var personnage1: Minion = new Minion(10, "Arry", new AbstractCoordonnees(0, 0)) with Mechancete;
     
     /* Ajout de minions au joueur1 */
-    jeu.joueur1.add_Minion(personnage1);
+    jeu.joueur.add_Minion(personnage1);
     
-    println(jeu.joueur1);
-    println(jeu.joueur1.list_Minions);
-    println(jeu.joueur1.isEmpty_Minion);
+    println(jeu.joueur);
+    println(jeu.joueur.list_Minions);
+    println(jeu.joueur.isEmpty_Minion);
     
     /* Supression d'un minion */
-    jeu.joueur1.delete_Minion(personnage);
-    jeu.joueur1.augmente_Niveau();
-    println(jeu.joueur1);
-    println(jeu.joueur1.list_Minions);
-
+    jeu.joueur.delete_Minion(personnage);
+    jeu.joueur.augmente_Niveau();
+    println(jeu.joueur);
+    println(jeu.joueur.list_Minions);
+    
     /*
     var coordMinion = new Coordonnees2D(1.5, 4.6)
     var posMinion = new Position2D(coordMinion)
@@ -39,5 +43,6 @@ object Test {
     //joueur.add(10, "Kevin")
     //TODO : changer le add de la classe joueur en add(Minion)
     */
+    
   }
 }
