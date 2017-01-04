@@ -15,15 +15,15 @@ class Zone(val Superficie : Integer) {
   
   /** TODO : à la création de la surface il faut vérifier que les AbstractCoordonnees  
    *  sont bien adjacentes et que ces coordonnees ne sont pas utilisees pour d'autres
-   *  zones
+   *  zones. Faire une zone de base. Que l'on peut modifier après
    */
-  val Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
+  var Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
   
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
-  val ComponentsJoueur : ListBuffer[Joueur] = null
-  val ComponentsMinion : ListBuffer[Minion] = null
-  val ComponentsObjet : ListBuffer[Objet] = null 
-  //val ComponentsLieu : ListBuffer[Magasin]
+  var ComponentsJoueur : ListBuffer[Joueur] = null
+  var ComponentsMinion : ListBuffer[Minion] = null
+  var ComponentsObjet : ListBuffer[Objet] = null 
+  //var ComponentsLieu : ListBuffer[Magasin]
   
   /** méthode de création lorsqu'on crée la zone ou qu'un joueur libere un objet ou un minion**/
   def addMinion(m : Minion) = ComponentsMinion += m

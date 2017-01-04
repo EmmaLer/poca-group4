@@ -7,5 +7,9 @@ class Coordonnees2D ( x: Int, y: Int)extends AbstractCoordonnees(x:Int,y:Int){
     return (c2.x == x && c2.y == y );
   }
  
+  /*changer en abstract */
+  def changeToAbstract ():AbstractCoordonnees={
+    return new AbstractCoordonnees (this.x,this.y)
+  }
   
 }
