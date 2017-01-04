@@ -12,12 +12,13 @@ import controleur.AbstractCoordonnees
 import scala.collection.mutable.ListBuffer
 
 class Zone(val Superficie : Integer) {
+
   
   /** TODO : à la création de la surface il faut vérifier que les AbstractCoordonnees  
    *  sont bien adjacentes et que ces coordonnees ne sont pas utilisees pour d'autres
    *  zones. Faire une zone de base. Que l'on peut modifier après
    */
-  var Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
+  val Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
   
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
   var ComponentsJoueur : ListBuffer[Joueur] = null
@@ -45,7 +46,5 @@ class Zone(val Superficie : Integer) {
   /** TODO : reflechir aux methodes à implementer les zones 
    *  contiennent des AbstractCoordonnees qui contiennent des objets génériques
    */
-  
-  //def creeZone(
   
 }
