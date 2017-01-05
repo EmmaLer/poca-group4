@@ -14,7 +14,7 @@ object Carte {
   var List_Zones = new ListBuffer[Zone]
   
   
-  def affiche = println("j'affiche la carte")
+  def afficheCarte = println("j'affiche la carte")
   def addZone(z : Zone) = List_Zones += z
   def removeZone(z : Zone) = List_Zones -= z
   
