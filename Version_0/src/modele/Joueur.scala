@@ -3,7 +3,7 @@ package modele
 import controleur.AbstractCoordonnees
 import scala.collection.mutable.ListBuffer
 
-class Joueur(val pseudo: String) {
+class Joueur(val pseudo: String){
 
   /* Getteur pour le pseudo */
   def nom: String = pseudo

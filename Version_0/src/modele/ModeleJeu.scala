@@ -9,7 +9,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int)/*extends AbstractModele(sizeX:Int,
   //ici on mettra soit les regles du jeu
   
   var joueur = new Joueur("toma") 
-
+  
   def this(){
     this(5,5);
     sizeX = 5;

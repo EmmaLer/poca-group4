@@ -1,10 +1,13 @@
 package vue
 
+import java.io._
 import scala.swing._
 import controleur.ControleurJeu
 import java.awt.{ Color, Graphics2D }
 import scala.swing.BorderPanel.Position._
 import Observation._
+import modele.Joueur
+import modele.ModeleJeu
 
 // Définition de l'IG pour ModeleJeu et ControleurJeu
 // J'ai décidé d'utiliser SWING pour l'IG -- Si autre avis, on peut changer ;)
