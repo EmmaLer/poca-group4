@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
  * la representation graphique de la carte
  */
 
-object Carte {
+class Carte {
 
   var List_Zones = new ListBuffer[Zone]
   
@@ -17,6 +17,8 @@ object Carte {
   def afficheCarte = println("j'affiche la carte")
   def addZone(z : Zone) = List_Zones += z
   def removeZone(z : Zone) = List_Zones -= z
+  
+  def getZone() : Int = return List_Zones.length
   
   
 }
