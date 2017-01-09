@@ -11,7 +11,7 @@ import modele.ModeleJeu
 
 // Définition de l'IG pour ModeleJeu et ControleurJeu
 // J'ai décidé d'utiliser SWING pour l'IG -- Si autre avis, on peut changer ;)
-class VueJeu extends Observateur {
+class VueJeu (controleur :ControleurJeu) extends Observateur {
   //Faire la fenetre pour lancer le jeu
   def miseAjour(){ /*maj du dessin*/}
   

@@ -17,6 +17,10 @@ abstract class Objet {
   def creerObjet( obj : Objet, p : AbstractCoordonnees ){
     obj.position = p
   }
+  
+  def creer( p : AbstractCoordonnees ){
+    position = p
+  }
 
   /** verification de la methode remove **/
   def existe(p : AbstractCoordonnees): Boolean = {
