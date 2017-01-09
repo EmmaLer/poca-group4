@@ -9,12 +9,17 @@ import modele.Minion
 import modele.Mechancete
 import controleur.AbstractCoordonnees
 import vue.VueJeu
+import controleur.ControleurJeu
+
 
 object Test {
+  
   def main(args: Array[String]) {
     var jeu = new ModeleJeu();
-    val ui = new VueJeu
-//    println("End of main function")
+    var controleur = new ControleurJeu(jeu);
+    //val l = new LancementJeu(jeu,controleur)
+    
+    val ui = new VueJeu(controleur)
 
     /* Création des minions */
     var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
