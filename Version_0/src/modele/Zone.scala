@@ -21,10 +21,10 @@ class Zone(val Superficie : Integer) {
   val Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
   
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
-  var ComponentsJoueur : ListBuffer[Joueur] = null
-  var ComponentsMinion : ListBuffer[Minion] = null
-  var ComponentsObjet : ListBuffer[Objet] = null 
-  //var ComponentsLieu : ListBuffer[Magasin]
+  var ComponentsJoueur = new ListBuffer[Joueur]
+  var ComponentsMinion = new ListBuffer[Minion]
+  var ComponentsObjet = new ListBuffer[Objet]
+  //var ComponentsLieu = new ListBuffer[Magasin]
   
   /** méthode de création lorsqu'on crée la zone ou qu'un joueur libere un objet ou un minion**/
   def addMinion(m : Minion) = ComponentsMinion += m
@@ -35,9 +35,9 @@ class Zone(val Superficie : Integer) {
   def removeJoueur(j : Joueur) = ComponentsJoueur -= j
   
   /** connaitre les autres joueurs sur la meme zone que soi **/
-  def getJoueur() : ListBuffer[Joueur] = return ComponentsJoueur
-  def getMinion() : ListBuffer[Minion] = return ComponentsMinion
-  def getObjet() : ListBuffer[Objet] = return ComponentsObjet
+  def getJoueur() : Int = return ComponentsJoueur.length
+  def getMinion() : Int = return ComponentsMinion.length
+  def getObjet() : Int = return ComponentsObjet.length
   
   /** méthode appelée lorsqu'un joueur capture un minion ou un objet**/
   def removeMinion(m : Minion) = ComponentsMinion -= m

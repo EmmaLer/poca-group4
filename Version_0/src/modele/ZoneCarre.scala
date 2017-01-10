@@ -12,6 +12,8 @@ class ZoneCarre(override val Superficie : Integer) extends Zone(Superficie : Int
   override val Surface = Array(new AbstractCoordonnees(0,0),
                               new AbstractCoordonnees(0,1),
                               new AbstractCoordonnees(1,0),
-                              new AbstractCoordonnees(1,1)) 
+                              new AbstractCoordonnees(1,1))
+                         
    
+                             
 }

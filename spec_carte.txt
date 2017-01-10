@@ -1,5 +1,20 @@
+@auteur Elodie DECERLE
+
 Comment implémenter la carte ?
 
 Besoins :
-- lorsqu'un joueur est sur la carte, il doit pouvoir interroger le jeu pour savoir quels autres joueurs, quels minions, quelles arènes sont sur la carte,
-- on veut des 
+- afficher une carte qui contiennent les joueurs
+- afficher une carte pour le joueur
+- afficher les autres joueurs, minions, objets, lieux possibles sur la
+zone du joueur
+
+A faire :
+- trouver comment lier les coordonnées des objets sur les coordonnees
+des zones correspondantes
+- faire des tests (point à développer)
+
+En cours :
+- ajouter des zones à la carte
+- ajouter des objets aux zones
+
+Fait :
