@@ -35,6 +35,8 @@ class Zone(val Superficie : Integer) {
   def removeJoueur(j : Joueur) = ComponentsJoueur -= j
   
   /** connaitre les autres joueurs sur la meme zone que soi **/
+  // TODO : faire des fonctions generiques
+  def printListJoueur() = { ComponentsJoueur.foreach(println)}
   def getJoueur() : Int = return ComponentsJoueur.length
   def getMinion() : Int = return ComponentsMinion.length
   def getObjet() : Int = return ComponentsObjet.length

@@ -88,6 +88,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
 //  zone.addMinion(m2)
   
   println("Nombre de joueurs sur la zone : " + zone.getJoueur())
+  zone.printListJoueur()
   println("Nombre de minions sur la zone : " + zone.getMinion())
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   
