@@ -70,26 +70,54 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   var j2 = new Joueur("sam")
   var m1 = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
   var m2 = new Minion(10, "Arry", new AbstractCoordonnees(0, 0)) with Mechancete;
-  
-  var carte = new Carte()
-  
-  var zone = new ZoneCarre(5);
-  var zone3 = new ZoneCarre(4);
-  
-  carte.addZone(zone)
-  carte.addZone(zone3)
-  carte.afficheCarte
-  println("Nombre de zones sur la carte : " + carte.getZone())
-  
-  zone.afficheZoneCarre
-  zone.addJoueur(j1)
-  zone.addJoueur(j2)
-  zone.addMinion(m1)
-//  zone.addMinion(m2)
-  
-  println("Nombre de joueurs sur la zone : " + zone.getJoueur())
-  zone.printListJoueur()
-  println("Nombre de minions sur la zone : " + zone.getMinion())
+
+  def creationCarte() = {
+    var carte = new Carte()
+    var tabZone1: Array[Coordonnees2D] = new Array[Coordonnees2D](25)
+    tabZone1(0) = new AbstractCoordonnees(0, 0).changeToCoordonnees2D()
+    tabZone1(1) = new AbstractCoordonnees(0, 1).changeToCoordonnees2D()
+    tabZone1(2) = new AbstractCoordonnees(0, 2).changeToCoordonnees2D()
+    tabZone1(3) = new AbstractCoordonnees(0, 3).changeToCoordonnees2D()
+    tabZone1(4) = new AbstractCoordonnees(0, 4).changeToCoordonnees2D()
+    tabZone1(5) = new AbstractCoordonnees(1, 0).changeToCoordonnees2D()
+    tabZone1(6) = new AbstractCoordonnees(1, 1).changeToCoordonnees2D()
+    tabZone1(7) = new AbstractCoordonnees(1, 2).changeToCoordonnees2D()
+    tabZone1(8) = new AbstractCoordonnees(1, 3).changeToCoordonnees2D()
+    tabZone1(9) = new AbstractCoordonnees(1, 4).changeToCoordonnees2D()
+    tabZone1(10) = new AbstractCoordonnees(2, 0).changeToCoordonnees2D()
+    tabZone1(11) = new AbstractCoordonnees(2, 1).changeToCoordonnees2D()
+    tabZone1(12) = new AbstractCoordonnees(2, 2).changeToCoordonnees2D()
+    tabZone1(13) = new AbstractCoordonnees(2, 3).changeToCoordonnees2D()
+    tabZone1(14) = new AbstractCoordonnees(2, 4).changeToCoordonnees2D()
+    tabZone1(15) = new AbstractCoordonnees(3, 0).changeToCoordonnees2D()
+    tabZone1(16) = new AbstractCoordonnees(3, 1).changeToCoordonnees2D()
+    tabZone1(17) = new AbstractCoordonnees(3, 2).changeToCoordonnees2D()
+    tabZone1(18) = new AbstractCoordonnees(3, 3).changeToCoordonnees2D()
+    tabZone1(19) = new AbstractCoordonnees(3, 4).changeToCoordonnees2D()
+    tabZone1(20) = new AbstractCoordonnees(4, 0).changeToCoordonnees2D()
+    tabZone1(21) = new AbstractCoordonnees(4, 1).changeToCoordonnees2D()
+    tabZone1(22) = new AbstractCoordonnees(4, 2).changeToCoordonnees2D()
+    tabZone1(23) = new AbstractCoordonnees(4, 3).changeToCoordonnees2D()
+    tabZone1(24) = new AbstractCoordonnees(4, 4).changeToCoordonnees2D()
+
+    var zone = new ZoneCarre(tabZone1);
+    //var zone3 = new ZoneCarre(4);
+
+    carte.addZone(zone)
+    //carte.addZone(zone3)
+    carte.afficheCarte
+    println("Nombre de zones sur la carte : " + carte.getZone())
+
+    zone.afficheZoneCarre
+    zone.addJoueur(j1)
+    zone.addJoueur(j2)
+    zone.addMinion(m1)
+    //  zone.addMinion(m2)
+
+    println("Nombre de joueurs sur la zone : " + zone.getJoueur())
+    zone.printListJoueur()
+    println("Nombre de minions sur la zone : " + zone.getMinion())
+  }
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   
   /** déplacement **/

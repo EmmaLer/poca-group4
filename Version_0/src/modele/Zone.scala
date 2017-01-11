@@ -9,17 +9,11 @@
 package modele
 
 import controleur.AbstractCoordonnees
+import controleur.Coordonnees2D
 import scala.collection.mutable.ListBuffer
 
-class Zone(val Superficie : Integer) {
-
-  
-  /** TODO : à la création de la surface il faut vérifier que les AbstractCoordonnees  
-   *  sont bien adjacentes et que ces coordonnees ne sont pas utilisees pour d'autres
-   *  zones. Faire une zone de base. Que l'on peut modifier après
-   */
-  val Surface : Array[AbstractCoordonnees] = new Array[AbstractCoordonnees](Superficie)
-  
+class Zone(val Surface : Array[Coordonnees2D]) {
+ 
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
   var ComponentsJoueur = new ListBuffer[Joueur]
   var ComponentsMinion = new ListBuffer[Minion]
