@@ -55,6 +55,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     minion(8)=new Minion(46,"Tom9",new Coordonnees2D(14,19))with Mechancete
     minion(9)=new Minion(50,"Tomi1",new Coordonnees2D(6,13))with Mechancete
     minion++minionJeu
+    println(" " + minion(9))
   }
   
   override def ajouterObs(o:Observateur)={
@@ -78,18 +79,11 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     for (i <- 0 to 5-1) {
       for (j <- 0 to 5-1) {
         tabZone1(i)(j) = new Coordonnees2D(i,j)
-        println("i :" + i + " et j :" +j)
-        println(tabZone1(i)(j))
+        tabZone1(i)(j).x = i
+        tabZone1(i)(j).y = j
       }
     }
-
-    println("affichage tabZone1")
-     for (k <- 0 to 5-1) {
-      for (l <- 0 to 5-1) {
-        print(" " +tabZone1(k)(l))
-      }
-      println()
-    }
+    
     var zone = new ZoneCarre();
     zone.Surface = tabZone1
     //var zone3 = new ZoneCarre(4);
