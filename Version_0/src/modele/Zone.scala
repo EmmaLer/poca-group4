@@ -12,8 +12,9 @@ import controleur.AbstractCoordonnees
 import controleur.Coordonnees2D
 import scala.collection.mutable.ListBuffer
 
-class Zone(val Surface : Array[Coordonnees2D]) {
+class Zone {
  
+  var Surface = Array.ofDim[Coordonnees2D](5, 5)
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
   var ComponentsJoueur = new ListBuffer[Joueur]
   var ComponentsMinion = new ListBuffer[Minion]
@@ -30,7 +31,7 @@ class Zone(val Surface : Array[Coordonnees2D]) {
   
   /** connaitre les autres joueurs sur la meme zone que soi **/
   // TODO : faire des fonctions generiques
-  def printListJoueur() = { ComponentsJoueur.foreach(println)}
+  def printListJoueur() = { ComponentsJoueur.foreach(println) }
   def getJoueur() : Int = return ComponentsJoueur.length
   def getMinion() : Int = return ComponentsMinion.length
   def getObjet() : Int = return ComponentsObjet.length
