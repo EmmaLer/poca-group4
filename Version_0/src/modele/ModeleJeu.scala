@@ -104,6 +104,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   
+  println(joueur)
   /** déplacement **/
   def deplacement (pos1: Coordonnees2D, pos2: Coordonnees2D){
     if (!pos1.equals(pos2)){

@@ -75,7 +75,9 @@ class Joueur(val pseudo: String){
 
   /** Affiche les paramètres du joueur **/
   override def toString: String =
-    "Pseudo: " + nom + ", nvx de méchanceté: " + nv_Mechant + ", nb de minons: " + list_Minions.length + ", nb de potions: " + list_potion.length + "\n"
+    "Pseudo: " + nom + ", nvx de méchanceté: " + nv_Mechant + ", nb de minons: "
+    + list_Minions.length + ", nb de potions: " + list_potion.length +
+    ", PositionJoueur: " + position + "\n"
     
 
 }
