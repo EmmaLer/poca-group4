@@ -28,6 +28,9 @@ object Test {
     /* Ajout de minions au joueur1 */
     jeu.joueur.add_Minion(personnage1);
     
+    /* Affichage de la carte dans la console */
+    jeu.zone.afficheZoneCarre
+    
 //   println(jeu.joueur);
 //   println(jeu.joueur.list_Minions);
 //   println(jeu.joueur.isEmpty_Minion);
@@ -46,7 +49,6 @@ object Test {
     var minion = new MinionGentil(10, "Kevin", posMinion)
     
     //joueur.add(10, "Kevin")
-    //TODO : changer le add de la classe joueur en add(Minion)
     */
     
   }

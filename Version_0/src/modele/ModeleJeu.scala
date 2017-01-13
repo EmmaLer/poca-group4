@@ -8,6 +8,7 @@ import Observation._
 /**
  * Ce Modele est celui que l'on utilise avec des coordonnees en 2D 
  */
+
 class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,sizeY:Int){
   //ici on mettra soit les regles du jeu -- ON CONSIDERE QUE SIZEX ET SIZEY > 20
   
@@ -15,11 +16,29 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   var objBananaJeu = new ListBuffer[Banana]()
   var minionJeu= new ListBuffer[Minion]()
   
+  /**
+   * mise en place de la carte
+   */
+  var carte = new Carte()
+  var tabZone1 = Array.ofDim[Coordonnees2D](5, 5)
+  var i, j = 0
+  for (i <- 0 to 5 - 1) {
+    for (j <- 0 to 5 - 1) {
+      tabZone1(i)(j) = new Coordonnees2D(i, j)
+      tabZone1(i)(j).x = i
+      tabZone1(i)(j).y = j
+    }
+  }
+
+  var zone = new ZoneCarre();
+  zone.Surface = tabZone1
+  
   def this(){
     this(5,5);
     sizeX = 5;
     sizeY = 5;
   }
+  
   
   def placementJoueurDébut(){
     joueur.position.x = 0
@@ -40,8 +59,9 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     objB(8).creer(new Coordonnees2D(5,10))
     objB(9).creer(new Coordonnees2D(7,19))
     objB++objBananaJeu /* Concaténation des listes !*/
-      
+    objB++zone.ComponentsObjet
   }
+  
   def placementMinionDébut(){
     val minion = new ListBuffer[Minion]
     minion(0)=new Minion(2,"Tom1",new Coordonnees2D(1,1))with Mechancete
@@ -55,6 +75,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     minion(8)=new Minion(46,"Tom9",new Coordonnees2D(14,19))with Mechancete
     minion(9)=new Minion(50,"Tomi1",new Coordonnees2D(6,13))with Mechancete
     minion++minionJeu
+    minion++zone.ComponentsMinion
     println(" " + minion(9))
   }
   
@@ -65,46 +86,8 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   override def prevenirObs={
     for(o <- listeObs) o.miseAjour()
   }
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////
-  /** test de creation de carte et de zone**/
-  var j1 = new Joueur("toto")
-  var j2 = new Joueur("sam")
-  var m1 = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
-  var m2 = new Minion(10, "Arry", new AbstractCoordonnees(0, 0)) with Mechancete;
-
-
-    var carte = new Carte()
-    var tabZone1 = Array.ofDim[Coordonnees2D](5,5)
-    var i,j = 0
-    for (i <- 0 to 5-1) {
-      for (j <- 0 to 5-1) {
-        tabZone1(i)(j) = new Coordonnees2D(i,j)
-        tabZone1(i)(j).x = i
-        tabZone1(i)(j).y = j
-      }
-    }
-    
-    var zone = new ZoneCarre();
-    zone.Surface = tabZone1
-    //var zone3 = new ZoneCarre(4);
-
-    carte.addZone(zone)
-    //carte.addZone(zone3)
-    carte.afficheCarte
-    zone.afficheZoneCarre
-    println("Nombre de zones sur la carte : " + carte.getZone())
-    zone.addJoueur(j1)
-    zone.addJoueur(j2)
-    zone.addMinion(m1)
-    //  zone.addMinion(m2)
-
-    println("Nombre de joueurs sur la zone : " + zone.getJoueur())
-    zone.printListJoueur()
-    println("Nombre de minions sur la zone : " + zone.getMinion())
   
-  ////////////////////////////////////////////////////////////////////////////////////////////////////
   
-  println(joueur)
   /** déplacement **/
   def deplacement (pos1: Coordonnees2D, pos2: Coordonnees2D){
     if (!pos1.equals(pos2)){
