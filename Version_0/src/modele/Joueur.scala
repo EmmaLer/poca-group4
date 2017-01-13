@@ -1,6 +1,6 @@
 package modele
 
-import controleur.AbstractCoordonnees
+import controleur._
 import scala.collection.mutable.ListBuffer
 
 class Joueur(val pseudo: String){
@@ -20,7 +20,7 @@ class Joueur(val pseudo: String){
   // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   /* Initialement le joueur est en position (0,0) */
   /*ICI A METTRE DANS LES REGLES DU JEU !!*/
-  var position = new AbstractCoordonnees(0, 0)
+  var position = new Coordonnees2D(0, 0)
 
   /**
    * Augmente le niveau de méchanceté du joueur

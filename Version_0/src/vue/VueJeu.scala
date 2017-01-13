@@ -2,7 +2,6 @@ package vue
 
 import scala.swing._
 import controleur.ControleurJeu
-//import java.awt.{ Color, Graphics2D }
 import scala.swing.BorderPanel.Position._
 import Observation._
 import modele.Joueur

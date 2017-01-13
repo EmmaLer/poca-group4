@@ -10,6 +10,7 @@ import modele.Mechancete
 import controleur.AbstractCoordonnees
 import vue.VueJeu
 import controleur.ControleurJeu
+import controleur.Coordonnees2D
 
 object Test {
 
@@ -33,8 +34,9 @@ object Test {
 
     /* Fait un déplacement */
     while (true) {
-      jeu.joueur.position.x = ui.coord_Actuel.x
-      jeu.joueur.position.y = ui.coord_Actuel.y
+      controleur.control(jeu.joueur.position, ui.coord_Actuel)
+    //  jeu.joueur.position.x = ui.coord_Actuel.x
+    //  jeu.joueur.position.y = ui.coord_Actuel.y
       printf(jeu.joueur.position + "\n")
     }
     /* Supression d'un minion */

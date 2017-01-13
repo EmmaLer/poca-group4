@@ -18,7 +18,7 @@ class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observ
   
   def miseAjour() {
     val controleur = new ControleurJeu(modele)
-    var jeu =new VueJeu(controleur)
+    var jeu = new VueJeu(controleur)
     modele.ajouterObs(jeu)
     modele.prevenirObs()
   }
