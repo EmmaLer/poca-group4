@@ -11,7 +11,6 @@ import javax.swing.ImageIcon
  */
 
 class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,sizeY:Int){
-  //ici on mettra soit les regles du jeu -- ON CONSIDERE QUE SIZEX ET SIZEY > 20
   
   var joueur = new Joueur("toma") 
   var objBananaJeu = new ListBuffer[Banana]()
@@ -22,18 +21,14 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
    */
   var carte = new Carte()
   var tabZone1 = Array.ofDim[Coordonnees2D](5, 5)
-  for (i <- 0 to 5 - 1) {
-    for (j <- 0 to 5 - 1) {
+  for (i <- 0 to sizeX - 1) {
+    for (j <- 0 to sizeY - 1) {
       tabZone1(i)(j) = new Coordonnees2D(i, j)
       tabZone1(i)(j).x = i
       tabZone1(i)(j).y = j
     }
   }
-
-  sizeX = 5
-  sizeY = 5
-  
-  var zone = new ZoneCarre();
+  var zone = new ZoneCarre(sizeX, sizeY);
   zone.Surface = tabZone1
   
   def placementJoueurDébut(){

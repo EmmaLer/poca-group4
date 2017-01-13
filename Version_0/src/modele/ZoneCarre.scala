@@ -5,7 +5,7 @@ import controleur.AbstractCoordonnees
 import controleur.Coordonnees2D
 
 
-class ZoneCarre extends Zone {
+class ZoneCarre(sizeX : Int, sizeY : Int) extends Zone(sizeX: Int, sizeY : Int) {
 
   def afficheZoneCarre {
     for (i <- 0 to 5-1) {

@@ -7,7 +7,7 @@ import Array._
 import modele.ModeleJeu
 import modele.Minion
 import modele.Mechancete
-import controleur._
+import controleur.AbstractCoordonnees
 import vue.VueJeu
 import controleur.ControleurJeu
 
@@ -20,16 +20,9 @@ object Test {
     //val l = new LancementJeu(jeu,controleur)
 
     val ui = new VueJeu(controleur)
-    
-    /* Test placement début */
     jeu.placementObjetDébut()
     jeu.placementMinionDébut()
     jeu.placementJoueurDébut()
-    
-   
-    println("pour controleur:")
-    //println(new Coordonnees2D(0,3))  
-    
     
     /* Création des minions */
     var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
@@ -42,12 +35,11 @@ object Test {
     jeu.zone.afficheZoneCarre
 
     /* Fait un déplacement */
-    while (true) { 
-      controleur.control(jeu.joueur.position, ui.coord_Actuel)
+   // while (true) {
       jeu.joueur.position.x = ui.coord_Actuel.x
       jeu.joueur.position.y = ui.coord_Actuel.y
       printf(jeu.joueur.position + "\n")
-    }
+    //}
     /* Supression d'un minion */
     jeu.joueur.delete_Minion(personnage);
     jeu.joueur.augmente_Niveau();

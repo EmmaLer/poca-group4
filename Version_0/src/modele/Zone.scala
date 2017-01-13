@@ -12,9 +12,9 @@ import controleur.AbstractCoordonnees
 import controleur.Coordonnees2D
 import scala.collection.mutable.ListBuffer
 
-class Zone {
+class Zone(sizeX : Int, sizeY : Int) {
  
-  var Surface = Array.ofDim[Coordonnees2D](5, 5)
+  var Surface = Array.ofDim[Coordonnees2D](sizeX, sizeY)
   //pour l'instant plusieurs listes jusqu'a trouver moyen de faire un générique
   var ComponentsJoueur = new ListBuffer[Joueur]
   var ComponentsMinion = new ListBuffer[Minion]
