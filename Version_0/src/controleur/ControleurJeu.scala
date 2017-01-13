@@ -13,8 +13,9 @@ class ControleurJeu (var modele: ModeleJeu){
 			//a modifier quand on aura la carte
 			if(pos2.x >= 0 && pos2.x < modele.sizeX){
 				if (pos1.x >= 0 && pos1.x < modele.sizeY){
-					var mvtAtt = new ListBuffer [AbstractCoordonnees]()
-					mvtAtt = modele.joueur.mvtAtteignable(pos1)
+					var mvtAtt = new Array [Coordonnees2D](8)
+					mvtAtt = modele.joueur.mvtAtteignable(pos1,modele)
+					
 					for (x <- mvtAtt){
 						if(pos2.equals(x))
 							return true

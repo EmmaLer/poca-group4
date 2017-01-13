@@ -22,7 +22,6 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
    */
   var carte = new Carte()
   var tabZone1 = Array.ofDim[Coordonnees2D](5, 5)
-  var i, j = 0
   for (i <- 0 to 5 - 1) {
     for (j <- 0 to 5 - 1) {
       tabZone1(i)(j) = new Coordonnees2D(i, j)

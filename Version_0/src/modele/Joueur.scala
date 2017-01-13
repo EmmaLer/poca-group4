@@ -57,16 +57,19 @@ class Joueur(val pseudo: String){
   }
 
   /**Liste des déplacements faisables -- ne regarde pas si dans carte car controleur le fait !!*/
-  def mvtAtteignable (pos :AbstractCoordonnees):ListBuffer [AbstractCoordonnees] ={
-    var l = new ListBuffer [AbstractCoordonnees];
-    l.+=(new AbstractCoordonnees (pos.x+1,pos.y))
-    l.+=(new AbstractCoordonnees (pos.x-1,pos.y))
-    l.+=(new AbstractCoordonnees (pos.x,pos.y+1))
-    l.+=(new AbstractCoordonnees (pos.x,pos.y-1)) 
-    l.+=(new AbstractCoordonnees (pos.x+1,pos.y+1))
-    l.+=(new AbstractCoordonnees (pos.x-1,pos.y+1))
-    l.+=(new AbstractCoordonnees (pos.x-1,pos.y-1))
-    l.+=(new AbstractCoordonnees (pos.x+1,pos.y-1)) 
+  def mvtAtteignable (pos :Coordonnees2D,modele:ModeleJeu):Array [Coordonnees2D] ={
+    var l = new Array [Coordonnees2D](8)
+    l(0)= new Coordonnees2D(pos.x+1,pos.y)
+    l(1)=new Coordonnees2D(pos.x-1,pos.y)
+    l(2)=new Coordonnees2D (pos.x,pos.y+1)
+    l(3)=new Coordonnees2D(pos.x,pos.y-1) 
+    l(4)=new Coordonnees2D(pos.x+1,pos.y+1)
+    l(5)=new Coordonnees2D(pos.x-1,pos.y+1)
+    l(6)=new Coordonnees2D(pos.x-1,pos.y-1)
+    l(7)=new Coordonnees2D(pos.x+1,pos.y-1) 
+    for (i<-0 to l.length-1)
+      println(l(i))
+    return l
   }
   
   /** Vérifie si list_potion est vide **/
