@@ -15,7 +15,7 @@ import controleur.ControleurJeu
 object Test {
   
   def main(args: Array[String]) {
-    var jeu = new ModeleJeu();
+    var jeu = new ModeleJeu(5,5);
     var controleur = new ControleurJeu(jeu);
     
     //val l = new LancementJeu(jeu,controleur)
@@ -28,6 +28,9 @@ object Test {
     
     /* Ajout de minions au joueur1 */
     jeu.joueur.add_Minion(personnage1);
+    
+    /* Affichage de la carte dans la console */
+    jeu.zone.afficheZoneCarre
     
 //   println(jeu.joueur);
 //   println(jeu.joueur.list_Minions);
@@ -47,7 +50,6 @@ object Test {
     var minion = new MinionGentil(10, "Kevin", posMinion)
     
     //joueur.add(10, "Kevin")
-    //TODO : changer le add de la classe joueur en add(Minion)
     */
     
   }
