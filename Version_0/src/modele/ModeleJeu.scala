@@ -4,6 +4,7 @@ import controleur.Coordonnees2D
 import controleur.AbstractCoordonnees
 import scala.collection.mutable.ListBuffer
 import Observation._
+import javax.swing.ImageIcon
 
 /**
  * Ce Modele est celui que l'on utilise avec des coordonnees en 2D 
@@ -30,50 +31,46 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     }
   }
 
+  sizeX = 5
+  sizeY = 5
+  
   var zone = new ZoneCarre();
   zone.Surface = tabZone1
   
-  def this(){
-    this(5,5);
-    sizeX = 5;
-    sizeY = 5;
-  }
-  
-  
   def placementJoueurDébut(){
-    joueur.position.x = 0
-    joueur.position.y = 0
+    joueur.position = tabZone1(0)(0)
   }
+
   
   def placementObjetDébut (){
     val objB = new ListBuffer[Banana]
     //On place 10 éléments de type banana
-    objB(0).creer(new Coordonnees2D(1,0))
-    objB(1).creer(new Coordonnees2D(4,5))
-    objB(2).creer(new Coordonnees2D(0,2))
-    objB(3).creer(new Coordonnees2D(9,1))
-    objB(4).creer(new Coordonnees2D(8,8))
-    objB(5).creer(new Coordonnees2D(2,0))
-    objB(6).creer(new Coordonnees2D(13,3))
-    objB(7).creer(new Coordonnees2D(2,14))
+    objB(0).creer(tabZone1(1)(0))
+    objB(1).creer(tabZone1(4)(5))
+    objB(2).creer(tabZone1(0)(2))
+    //objB(3).creer(new Coordonnees2D(9,1))
+    //objB(4).creer(new Coordonnees2D(8,8))
+    objB(5).creer(tabZone1(2)(0))
+  //  objB(6).creer(new Coordonnees2D(13,3))
+   /* objB(7).creer(new Coordonnees2D(2,14))
     objB(8).creer(new Coordonnees2D(5,10))
-    objB(9).creer(new Coordonnees2D(7,19))
+    objB(9).creer(new Coordonnees2D(7,19))*/
     objB++objBananaJeu /* Concaténation des listes !*/
     objB++zone.ComponentsObjet
   }
   
   def placementMinionDébut(){
     val minion = new ListBuffer[Minion]
-    minion(0)=new Minion(2,"Tom1",new Coordonnees2D(1,1))with Mechancete
-    minion(1)=new Minion(34,"Tom2",new Coordonnees2D(3,1))with Mechancete
-    minion(2)=new Minion(97,"Tom3",new Coordonnees2D(5,0))with Mechancete
-    minion(3)=new Minion(78,"Tom4",new Coordonnees2D(6,9))with Mechancete
-    minion(4)=new Minion(22,"Tom5",new Coordonnees2D(7,7))with Mechancete
-    minion(5)=new Minion(90,"Tom6",new Coordonnees2D(4,1))with Mechancete
-    minion(6)=new Minion(13,"Tom7",new Coordonnees2D(1,8))with Mechancete
+    minion(0)=new Minion(2,"Tom1",tabZone1(1)(1))with Mechancete
+    minion(1)=new Minion(34,"Tom2",tabZone1(3)(1))with Mechancete
+    minion(2)=new Minion(97,"Tom3",tabZone1(5)(0))with Mechancete
+ /*   minion(3)=new Minion(78,"Tom4",new Coordonnees2D(6,9))with Mechancete
+    minion(4)=new Minion(22,"Tom5",new Coordonnees2D(7,7))with Mechancete*/
+    minion(5)=new Minion(90,"Tom6",tabZone1(4)(1))with Mechancete
+ /*   minion(6)=new Minion(13,"Tom7",new Coordonnees2D(1,8))with Mechancete
     minion(7)=new Minion(9,"Tom8",new Coordonnees2D(16,0))with Mechancete
     minion(8)=new Minion(46,"Tom9",new Coordonnees2D(14,19))with Mechancete
-    minion(9)=new Minion(50,"Tomi1",new Coordonnees2D(6,13))with Mechancete
+    minion(9)=new Minion(50,"Tomi1",new Coordonnees2D(6,13))with Mechancete*/
     minion++minionJeu
     minion++zone.ComponentsMinion
     println(" " + minion(9))
@@ -93,10 +90,10 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     if (!pos1.equals(pos2)){
       if(joueur.position.changeToCoordonnees2D().equals(pos1)){
         joueur.position = pos2;
-      //  prevenirObs()
+        prevenirObs()
       }
     }else{
-      //prevenirObs()
+      prevenirObs()
       //Je ne fais rien mais je préviens l'observateur pour que le controleur le sache
     }
   }

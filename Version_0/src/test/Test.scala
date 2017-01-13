@@ -15,7 +15,7 @@ import controleur.ControleurJeu
 object Test {
   
   def main(args: Array[String]) {
-    var jeu = new ModeleJeu();
+    var jeu = new ModeleJeu(5,5);
     var controleur = new ControleurJeu(jeu);
     //val l = new LancementJeu(jeu,controleur)
     
