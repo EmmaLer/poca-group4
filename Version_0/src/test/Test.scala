@@ -10,7 +10,6 @@ import modele.Mechancete
 import controleur.AbstractCoordonnees
 import vue.VueJeu
 import controleur.ControleurJeu
-import controleur.Coordonnees2D
 
 object Test {
 
@@ -21,7 +20,10 @@ object Test {
     //val l = new LancementJeu(jeu,controleur)
 
     val ui = new VueJeu(controleur)
-
+    jeu.placementObjetDébut()
+    jeu.placementMinionDébut()
+    jeu.placementJoueurDébut()
+    
     /* Création des minions */
     var personnage: Minion = new Minion(10, "bob", new AbstractCoordonnees(0, 0)) with Mechancete;
     var personnage1: Minion = new Minion(10, "Arry", new AbstractCoordonnees(0, 0)) with Mechancete;
@@ -33,12 +35,11 @@ object Test {
     jeu.zone.afficheZoneCarre
 
     /* Fait un déplacement */
-    while (true) {
-      controleur.control(jeu.joueur.position, ui.coord_Actuel)
-    //  jeu.joueur.position.x = ui.coord_Actuel.x
-    //  jeu.joueur.position.y = ui.coord_Actuel.y
+   // while (true) {
+      jeu.joueur.position.x = ui.coord_Actuel.x
+      jeu.joueur.position.y = ui.coord_Actuel.y
       printf(jeu.joueur.position + "\n")
-    }
+    //}
     /* Supression d'un minion */
     jeu.joueur.delete_Minion(personnage);
     jeu.joueur.augmente_Niveau();

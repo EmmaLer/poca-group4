@@ -410,6 +410,7 @@ class VueJeu(controleur: ControleurJeu) extends Observateur {
       e.background = Color.LIGHT_GRAY
 
     but.background = Color.BLACK
+    
   }
 
 }
