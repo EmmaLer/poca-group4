@@ -17,6 +17,7 @@ object Test {
   def main(args: Array[String]) {
     var jeu = new ModeleJeu();
     var controleur = new ControleurJeu(jeu);
+    
     //val l = new LancementJeu(jeu,controleur)
     
     val ui = new VueJeu(controleur)
