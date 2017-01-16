@@ -18,7 +18,7 @@ import scala.collection.mutable.ListBuffer
 // J'ai décidé d'utiliser SWING pour l'IG -- Si autre avis, on peut changer ;)
 class VueJeu(controleur: ControleurJeu) extends Observateur {
 
-  var coord_Actuel: Coordonnees2D = new Coordonnees2D(2,2)
+  var coord_Actuel: Coordonnees2D = new Coordonnees2D(0,0)
 
   //Faire la fenetre pour lancer le jeu
   def miseAjour() { /*maj du dessin*/ }
@@ -406,7 +406,7 @@ class VueJeu(controleur: ControleurJeu) extends Observateur {
   }
 
   def deplacement(liste: ListBuffer[Button], but: Button) = {
-    if (controleur.mvtPossible(coord_Actuel)) {
+    if (controleur.caseAtteignable(coord_Actuel)) {
       for (e <- liste)
         e.background = Color.LIGHT_GRAY
 

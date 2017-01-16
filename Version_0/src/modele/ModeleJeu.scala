@@ -32,7 +32,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   zone.Surface = tabZone1
   
   def placementJoueurDébut(){
-    joueur.position = tabZone1(2)(2)
+    joueur.position = tabZone1(0)(0)
     /* on ajoute le joueur dans la zone */
     zone.addJoueur(joueur)
     println(joueur.position)

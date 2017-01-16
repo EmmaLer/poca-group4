@@ -22,12 +22,14 @@ class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observ
   
   def jouer() {
     var tour : Int = 0
-    while (tour < 5) {
-      if (tour == 1) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 2 }
-       if (tour == 2) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 1 }
-       if (tour == 3) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 3 }
-       if (tour == 4) { vue.coord_Actuel.x = 0; vue.coord_Actuel.y = 3 }
+    while (true) {
+//      test des mouvements possibles avec coordonnees de depart (0,3)      
+//      if (tour == 1) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 2 }
+//       if (tour == 2) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 4 }
+//       if (tour == 3) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 3 }
+//       if (tour == 4) { vue.coord_Actuel.x = 2; vue.coord_Actuel.y = 4 }
        
+      println("--------------------------------------------------------------------------")
       println("TOUR = " + tour)
       println("Position du joueur MAJ :" + modele.joueur.position)
       println("Vue coord Actuel " + vue.coord_Actuel)
@@ -35,10 +37,6 @@ class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observ
       tour = tour + 1
 //      miseAjsour
     }
-//    controleur.control(new Coordonnees2D(1,0))
-//    println(modele.joueur.position)
-//    controleur.control(new Coordonnees2D(1,1))
-//    println(modele.joueur.position)
   }
   
   def miseAjour() {

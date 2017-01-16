@@ -17,9 +17,7 @@ class Joueur(val pseudo: String){
   /* Création d'une liste d'objet, où on peut ajouter/supprimer */
   var list_potion = new ListBuffer[Objet]()
 
-  // A DISCUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  /* Initialement le joueur est en position (0,0) */
-  /*ICI A METTRE DANS LES REGLES DU JEU !!*/
+ /* Initialement le joueur est en position (0,0) */
   var position = new Coordonnees2D(0, 0)
 
   /**
