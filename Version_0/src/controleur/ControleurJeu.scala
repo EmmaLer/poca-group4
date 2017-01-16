@@ -11,24 +11,22 @@ class ControleurJeu (var modele: ModeleJeu){
   // vérification des pos sur la carte, si case atteignable etc..
   def mvtPossible(caseAAtteindre: Coordonnees2D): Boolean = {
     if (caseAAtteindre.x >= 0 && caseAAtteindre.x < modele.sizeX) {
-      println("dans le tableau")
       //on est dans le tableau donc on crée le tableau des cases atteignables
-        var mvtAtt = new Array[Coordonnees2D](8)
-        mvtAtt = mvtAtteignable
-        
-        //on affiche les cases atteignables
-        for (i <- 0 to mvtAtt.length - 1) 
-          print(mvtAtt(i) + " ")
-           
-          println
-          
-        for (i <- mvtAtt) {
-          if(caseAAtteindre.equals(i)) {
-            println("MvtPossible : Position départ :" + modele.joueur.position + " Position arrivée :" + caseAAtteindre)
-            return true
-          }
-        } 
-      
+      var mvtAtt = new Array[Coordonnees2D](8)
+      mvtAtt = mvtAtteignable
+
+      //on affiche les cases atteignables
+//      for (i <- 0 to mvtAtt.length - 1)
+//        print(mvtAtt(i) + " ")
+//      println
+
+      for (i <- mvtAtt) {
+        if (caseAAtteindre.equals(i)) {
+          println("MvtPossible : Position départ :" + modele.joueur.position + " Position arrivée :" + caseAAtteindre)
+          return true
+        }
+      }
+
     } else println("pas dans le tableau")
     return false
   }  
@@ -57,7 +55,7 @@ class ControleurJeu (var modele: ModeleJeu){
     // je fais le mvt dans le modele
       modele.deplacement(pos2);
     }else
-      println("Mouvement impossible !");
+      println("Mouvement impossible !" + pos2);
   }
   
 

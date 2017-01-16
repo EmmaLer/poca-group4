@@ -406,10 +406,12 @@ class VueJeu(controleur: ControleurJeu) extends Observateur {
   }
 
   def deplacement(liste: ListBuffer[Button], but: Button) = {
-    for (e <- liste)
-      e.background = Color.LIGHT_GRAY
+    if (controleur.mvtPossible(coord_Actuel)) {
+      for (e <- liste)
+        e.background = Color.LIGHT_GRAY
 
-    but.background = Color.BLACK
+      but.background = Color.BLACK
+    }
     
   }
 
