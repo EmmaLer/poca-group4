@@ -9,36 +9,55 @@ class ControleurJeu (var modele: ModeleJeu){
 
   // regarde si le mouvement demandé est possible
   // vérification des pos sur la carte, si case atteignable etc..
-  def mvtPossible(pos1: Coordonnees2D, pos2: Coordonnees2D): Boolean = {
-    //a modifier quand on aura la carte
-    if (pos2.x >= 0 && pos2.x < modele.sizeX) {
-      if (pos1.x >= 0 && pos1.x < modele.sizeY) {
+  def mvtPossible(caseAAtteindre: Coordonnees2D): Boolean = {
+    if (caseAAtteindre.x >= 0 && caseAAtteindre.x < modele.sizeX) {
+      println("dans le tableau")
+      //on est dans le tableau donc on crée le tableau des cases atteignables
         var mvtAtt = new Array[Coordonnees2D](8)
-        mvtAtt = modele.joueur.mvtAtteignable(pos1, modele)
-        for (i <- 0 to mvtAtt.length - 1)
-          println(mvtAtt(i))
+        mvtAtt = mvtAtteignable
+        
+        //on affiche les cases atteignables
+        for (i <- 0 to mvtAtt.length - 1) 
+          print(mvtAtt(i) + " ")
+           
+          println
+          
         for (i <- mvtAtt) {
-          if (pos2.equals(i))
-            println("MvtPossible : Position départ :" + pos1 + " Position arrivée :" + pos2)
-          return true
-        }
-      }
-    }
+          if(caseAAtteindre.equals(i)) {
+            println("MvtPossible : Position départ :" + modele.joueur.position + " Position arrivée :" + caseAAtteindre)
+            return true
+          }
+        } 
+      
+    } else println("pas dans le tableau")
     return false
   }  
     
+
+  /**Liste des déplacements faisables -- ne regarde pas si dans carte car controleur le fait !!*/
+  def mvtAtteignable:Array [Coordonnees2D] ={
+    var l = new Array [Coordonnees2D](8)
+    l(0)= new Coordonnees2D(modele.joueur.position.x+1,modele.joueur.position.y)
+    l(1)=new Coordonnees2D(modele.joueur.position.x-1,modele.joueur.position.y)
+    l(2)=new Coordonnees2D (modele.joueur.position.x,modele.joueur.position.y+1)
+    l(3)=new Coordonnees2D(modele.joueur.position.x,modele.joueur.position.y-1) 
+    l(4)=new Coordonnees2D(modele.joueur.position.x+1,modele.joueur.position.y+1)
+    l(5)=new Coordonnees2D(modele.joueur.position.x-1,modele.joueur.position.y+1)
+    l(6)=new Coordonnees2D(modele.joueur.position.x-1,modele.joueur.position.y-1)
+    l(7)=new Coordonnees2D(modele.joueur.position.x+1,modele.joueur.position.y-1) 
+
+    return l
+  }
     
-    // si le mvt est possible on fait le déplacement 
+    // si le mvt est modele.joueur.position est possible on fait le déplacement 
   // sinon retour à la case d'avant
-  def control (pos1 : Coordonnees2D, pos2: Coordonnees2D)={ 
-    if (mvtPossible(pos1,pos2)){
-      println("Mouvement possible !!");
+  def control (pos2: Coordonnees2D)={ 
+    if (mvtPossible(pos2)){
+      println("Mouvement possible !!" + modele.joueur.position + "arrive" + pos2);
     // je fais le mvt dans le modele
-      modele.deplacement(pos1, pos2);
+      modele.deplacement(pos2);
     }else
       println("Mouvement impossible !");
-      modele.deplacement(pos1,pos1);
-      //mvt pos 1 pos 1
   }
   
 

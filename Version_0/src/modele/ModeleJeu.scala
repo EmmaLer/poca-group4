@@ -83,20 +83,12 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   }
   
   
-  /** déplacement **/
-  def deplacement (pos1: Coordonnees2D, pos2: Coordonnees2D){
-    println("Position départ :" + pos1 + " Position arrivée :" + pos2)
-    if (pos1.equals(pos2)){
-      println("Position départ :" + pos1 + " Position arrivée :" + pos2)
-      if(joueur.position.equals(pos1)){
-        joueur.position.x = pos2.x;
-        joueur.position.y = pos2.y
-        prevenirObs()
-      }
-    }else{
-      println("Eddeed")
-      prevenirObs()
-      //Je ne fais rien mais je préviens l'observateur pour que le controleur le sache
-    }
+  /** fait le déplacement (les verifications sont dans mvtPossible**/
+  def deplacement (posFutur: Coordonnees2D){
+    println("ModJeuDeplacement Position départ :" + joueur.position + " Position arrivée :" + posFutur)
+    joueur.position.x = posFutur.x
+    joueur.position.y = posFutur.y
+    prevenirObs()
   }
+  
 }
