@@ -32,6 +32,8 @@ class Zone(sizeX : Int, sizeY : Int) {
   /** connaitre les autres joueurs sur la meme zone que soi **/
   // TODO : faire des fonctions generiques
   def printListJoueur() = { ComponentsJoueur.foreach(println) }
+  def printListMinion() = { ComponentsMinion.foreach(println) }
+  def printListObjet() = { ComponentsObjet.foreach(println) }
   def getJoueur() : Int = return ComponentsJoueur.length
   def getMinion() : Int = return ComponentsMinion.length
   def getObjet() : Int = return ComponentsObjet.length
@@ -39,9 +41,5 @@ class Zone(sizeX : Int, sizeY : Int) {
   /** méthode appelée lorsqu'un joueur capture un minion ou un objet**/
   def removeMinion(m : Minion) = ComponentsMinion -= m
   def removeObj(o : Objet) = ComponentsObjet -= o
-  
-  /** TODO : reflechir aux methodes à implementer les zones 
-   *  contiennent des AbstractCoordonnees qui contiennent des objets génériques
-   */
   
 }

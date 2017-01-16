@@ -67,8 +67,7 @@ class Joueur(val pseudo: String){
     l(5)=new Coordonnees2D(pos.x-1,pos.y+1)
     l(6)=new Coordonnees2D(pos.x-1,pos.y-1)
     l(7)=new Coordonnees2D(pos.x+1,pos.y-1) 
-    for (i<-0 to l.length-1)
-      println(l(i))
+
     return l
   }
   

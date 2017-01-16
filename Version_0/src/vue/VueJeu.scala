@@ -18,7 +18,7 @@ import scala.collection.mutable.ListBuffer
 // J'ai décidé d'utiliser SWING pour l'IG -- Si autre avis, on peut changer ;)
 class VueJeu(controleur: ControleurJeu) extends Observateur {
 
-  var coord_Actuel: Coordonnees2D = new Coordonnees2D(0, 0)
+  var coord_Actuel: Coordonnees2D = new Coordonnees2D(0,0)
 
   //Faire la fenetre pour lancer le jeu
   def miseAjour() { /*maj du dessin*/ }

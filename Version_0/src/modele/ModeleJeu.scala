@@ -20,7 +20,7 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
    * mise en place de la carte
    */
   var carte = new Carte()
-  var tabZone1 = Array.ofDim[Coordonnees2D](5, 5)
+  var tabZone1 = Array.ofDim[Coordonnees2D](sizeX, sizeY)
   for (i <- 0 to sizeX - 1) {
     for (j <- 0 to sizeY - 1) {
       tabZone1(i)(j) = new Coordonnees2D(i, j)
@@ -33,6 +33,8 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   
   def placementJoueurDébut(){
     joueur.position = tabZone1(0)(0)
+    /* on ajoute le joueur dans la zone */
+    zone.addJoueur(joueur)
     println(joueur.position)
   }
 
@@ -48,7 +50,10 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     objB(3).creer(tabZone1(3)(3))
     objB(4).creer(tabZone1(2)(0))
     objB++objBananaJeu /* Concaténation des listes !*/
-    objB++zone.ComponentsObjet
+    /* on ajoute les objets crees dans la liste des objets contenus dans la zone */
+    for (i<-0 to 4)
+      zone.addObj(objB(i))
+      
     for (i<- 0 to objB.length-1)
       println(objB(i))
   }
@@ -61,7 +66,10 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
     minion(3)=new Minion(90,"Tom6",tabZone1(4)(1))with Mechancete
 
     minion++minionJeu
-    minion++zone.ComponentsMinion
+    /* on ajoute les minions crees dans la liste des objets contenus dans la zone */
+    for (i<-0 to 3)
+      zone.addMinion(minion(i))
+      
     for(i<-0 to minion.length-1)
       println(minion(i))
   }
@@ -77,12 +85,16 @@ class ModeleJeu (var sizeX:Int,var sizeY:Int) extends AbstractModele(sizeX:Int,s
   
   /** déplacement **/
   def deplacement (pos1: Coordonnees2D, pos2: Coordonnees2D){
-    if (!pos1.equals(pos2)){
-      if(joueur.position.changeToCoordonnees2D().equals(pos1)){
-        joueur.position = pos2;
+    println("Position départ :" + pos1 + " Position arrivée :" + pos2)
+    if (pos1.equals(pos2)){
+      println("Position départ :" + pos1 + " Position arrivée :" + pos2)
+      if(joueur.position.equals(pos1)){
+        joueur.position.x = pos2.x;
+        joueur.position.y = pos2.y
         prevenirObs()
       }
     }else{
+      println("Eddeed")
       prevenirObs()
       //Je ne fais rien mais je préviens l'observateur pour que le controleur le sache
     }

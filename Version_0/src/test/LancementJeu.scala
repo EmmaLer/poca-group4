@@ -8,18 +8,31 @@ import scala.swing._
 
 class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observateur {
   var listeObs = new ListBuffer [Observateur]();
-  var panel: Panel = new GridPanel(5,5)
+  var vue = new VueJeu(controleur)
   
   def lancement (){
-    var vue = new VueJeu(controleur)
+
     modele.ajouterObs(vue)
-    panel = vue.frame.canvas
+    /* Test placement début */
+    modele.placementObjetDébut()
+    modele.placementMinionDébut()
+    modele.placementJoueurDébut()
+  }
+  
+  def jouer() {
+        /* Fait un déplacement */
+    while (true) {
+      controleur.control(modele.joueur.position, vue.coord_Actuel)
+      modele.joueur.position.x = vue.coord_Actuel.x
+      modele.joueur.position.y = vue.coord_Actuel.y
+      printf(modele.joueur.position + "\n")
+      miseAjour
+    }
   }
   
   def miseAjour() {
     val controleur = new ControleurJeu(modele)
-    var jeu = new VueJeu(controleur)
-    modele.ajouterObs(jeu)
+    modele.ajouterObs(vue)
     modele.prevenirObs()
   }
  
@@ -35,7 +48,4 @@ class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observ
     for(o <- listeObs) o.miseAjour()
   }
   
-  class PanelJeu () extends Panel {
-    
-  }
 }

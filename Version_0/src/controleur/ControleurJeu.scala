@@ -6,24 +6,26 @@ import modele.Joueur
 import scala.collection.mutable.ListBuffer
 
 class ControleurJeu (var modele: ModeleJeu){
-  
- // regarde si le mouvement demandé est possible
+
+  // regarde si le mouvement demandé est possible
   // vérification des pos sur la carte, si case atteignable etc..
-	def mvtPossible ( pos1: Coordonnees2D, pos2:Coordonnees2D): Boolean={
-			//a modifier quand on aura la carte
-			if(pos2.x >= 0 && pos2.x < modele.sizeX){
-				if (pos1.x >= 0 && pos1.x < modele.sizeY){
-					var mvtAtt = new Array [Coordonnees2D](8)
-					mvtAtt = modele.joueur.mvtAtteignable(pos1,modele)
-					
-					for (x <- mvtAtt){
-						if(pos2.equals(x))
-							return true
-					}
-				}
-			}
-			return false
-	}  
+  def mvtPossible(pos1: Coordonnees2D, pos2: Coordonnees2D): Boolean = {
+    //a modifier quand on aura la carte
+    if (pos2.x >= 0 && pos2.x < modele.sizeX) {
+      if (pos1.x >= 0 && pos1.x < modele.sizeY) {
+        var mvtAtt = new Array[Coordonnees2D](8)
+        mvtAtt = modele.joueur.mvtAtteignable(pos1, modele)
+        for (i <- 0 to mvtAtt.length - 1)
+          println(mvtAtt(i))
+        for (i <- mvtAtt) {
+          if (pos2.equals(i))
+            println("MvtPossible : Position départ :" + pos1 + " Position arrivée :" + pos2)
+          return true
+        }
+      }
+    }
+    return false
+  }  
     
     
     // si le mvt est possible on fait le déplacement 
