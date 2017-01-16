@@ -21,16 +21,24 @@ class LancementJeu (modele: ModeleJeu, controleur: ControleurJeu) extends Observ
   }
   
   def jouer() {
-    while (true) {
-      println("Lancement jeu 111111111111111111111111111111111" + modele.joueur.position)
-      println("BEFORE : vue coord Actuel " + vue.coord_Actuel)
+    var tour : Int = 0
+    while (tour < 5) {
+      if (tour == 1) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 2 }
+       if (tour == 2) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 1 }
+       if (tour == 3) { vue.coord_Actuel.x = 1; vue.coord_Actuel.y = 3 }
+       if (tour == 4) { vue.coord_Actuel.x = 0; vue.coord_Actuel.y = 3 }
+       
+      println("TOUR = " + tour)
+      println("Position du joueur MAJ :" + modele.joueur.position)
+      println("Vue coord Actuel " + vue.coord_Actuel)
       controleur.control(vue.coord_Actuel)
-      println("AFTER : vue coord Actuel " + vue.coord_Actuel)
+      tour = tour + 1
 //      miseAjsour
     }
 //    controleur.control(new Coordonnees2D(1,0))
 //    println(modele.joueur.position)
 //    controleur.control(new Coordonnees2D(1,1))
+//    println(modele.joueur.position)
   }
   
   def miseAjour() {
